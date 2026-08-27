@@ -78,6 +78,13 @@ def get_match(match_id: str, api_key: str) -> dict:
     return api_get(url, api_key)
 
 
+def get_ddragon_version() -> str:
+    url = "https://ddragon.leagueoflegends.com/api/versions.json"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; lol-trmnl/1.0)"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode("utf-8"))[0]
+
+
 def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[list[dict], dict]:
     matches = []
     champ_stats: dict[str, dict] = defaultdict(lambda: {"games": 0, "wins": 0})
@@ -128,7 +135,14 @@ def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[l
             }
         )
 
-    return matches, {"topChampions": top_champion_stats}
+    avg_kda = round(sum(m["kda"] for m in matches) / len(matches), 2) if matches else None
+    avg_cs_per_min = round(sum(m["csPerMin"] for m in matches) / len(matches), 2) if matches else None
+
+    return matches, {
+        "topChampions": top_champion_stats,
+        "avgKda": avg_kda,
+        "avgCsPerMin": avg_cs_per_min,
+    }
 
 
 def main() -> None:
@@ -147,14 +161,18 @@ def main() -> None:
     ranked_stats = get_ranked_stats(puuid, api_key)
     match_ids = get_match_ids(puuid, api_key, MATCH_COUNT)
     matches, champion_summary = summarize_matches(match_ids, puuid, api_key)
+    ddragon_version = get_ddragon_version()
 
     data = {
         "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "riotId": riot_id,
         "region": "EUW",
+        "ddragonVersion": ddragon_version,
         "soloDuo": ranked_stats,
         "recentMatches": matches,
         "topChampions": champion_summary["topChampions"],
+        "avgKda": champion_summary["avgKda"],
+        "avgCsPerMin": champion_summary["avgCsPerMin"],
     }
 
     with open("data.json", "w", encoding="utf-8") as f:

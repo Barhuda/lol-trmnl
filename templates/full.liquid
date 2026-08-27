@@ -1,0 +1,76 @@
+{% assign matches_oldest_first = recentMatches | reverse %}
+
+<div class="view view--full">
+<div style="background: #ffffff; color: #000000; width: 800px; height: 480px; padding: 24px 28px; display: flex; flex-direction: column; font-family: monospace; box-sizing: border-box;">
+
+  <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 16px;">
+    <span style="font-size: 18px; font-weight: 700; letter-spacing: 0.5px;">{{ riotId | upcase }}</span>
+    <span style="font-size: 12px; color: #444;">SOLO/DUO &middot; {{ region }}</span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+    <div style="border-right: 2px solid #000; padding-right: 20px; display: flex; flex-direction: column; justify-content: center;">
+      {% if soloDuo %}
+        <div style="font-size: 34px; font-weight: 700; line-height: 1;">{{ soloDuo.tier }} {{ soloDuo.rank }}</div>
+        <div style="font-size: 15px; margin-top: 6px;">{{ soloDuo.leaguePoints }} LP</div>
+        <div style="font-size: 12px; color: #333; margin-top: 10px;">{{ soloDuo.winrate }}% WR &middot; {{ soloDuo.wins }}W {{ soloDuo.losses }}L</div>
+      {% else %}
+        <div style="font-size: 22px; font-weight: 700;">UNRANKED</div>
+      {% endif %}
+    </div>
+
+    <div style="display: flex; flex-direction: column; justify-content: center; gap: 14px;">
+      <div>
+        <div style="font-size: 10px; color: #555; margin-bottom: 6px;">LAST {{ recentMatches | size }} (OLDEST &rarr; NEWEST)</div>
+        <div style="display: flex; gap: 3px;">
+          {% for m in matches_oldest_first %}
+            {% if m.win %}
+              <span style="width:14px;height:14px;background:#000;"></span>
+            {% else %}
+              <span style="width:14px;height:14px;border:1.5px solid #000;"></span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div style="display: flex; gap: 16px;">
+        <div style="border: 2px solid #000; padding: 8px 12px; flex: 1;">
+          <div style="font-size: 10px; color: #555;">AVG KDA</div>
+          <div style="font-size: 20px; font-weight: 700;">{{ avgKda }}</div>
+        </div>
+        <div style="border: 2px solid #000; padding: 8px 12px; flex: 1;">
+          <div style="font-size: 10px; color: #555;">AVG CS/MIN</div>
+          <div style="font-size: 20px; font-weight: 700;">{{ avgCsPerMin }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border-top: 2px solid #000; margin-top: 16px; padding-top: 12px; flex: 1;">
+    <div style="font-size: 10px; color: #555; margin-bottom: 10px;">TOP CHAMPIONS</div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      {% for c in topChampions %}
+        <div style="display: grid; grid-template-columns: 34px 90px 40px 1fr 44px; align-items: center; font-size: 13px; gap: 10px;">
+          <img
+            src="https://ddragon.leagueoflegends.com/cdn/{{ ddragonVersion }}/img/champion/{{ c.champion }}.png"
+            width="34" height="34"
+            style="border: 2px solid #000; object-fit: cover;"
+            onerror="this.style.display='none'"
+          />
+          <span>{{ c.champion }}</span>
+          <span style="color: #444;">{{ c.games }}g</span>
+          <div style="height: 10px; border: 1.5px solid #000; position: relative;">
+            <div style="position:absolute; top:0; left:0; bottom:0; width: {{ c.winrate }}%; background:#000;"></div>
+          </div>
+          <span style="text-align: right;">{{ c.winrate }}%</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div style="text-align: right; font-size: 10px; color: #666; margin-top: 10px;">
+    updated {{ updatedAt }} &middot; refresh every 30 min
+  </div>
+
+</div>
+</div>
