@@ -1,7 +1,8 @@
 {
-  "updatedAt": "2026-08-27T16:11:58Z",
+  "updatedAt": "2026-08-27T16:12:31Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
+  "ddragonVersion": "16.17.1",
   "soloDuo": {
     "tier": "SILVER",
     "rank": "I",
@@ -251,5 +252,7 @@
       "wins": 0,
       "winrate": 0.0
     }
-  ]
+  ],
+  "avgKda": 2.27,
+  "avgCsPerMin": 6.36
 }
