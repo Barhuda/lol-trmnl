@@ -1,0 +1,160 @@
+"""Fetch League of Legends Solo/Duo stats from the Riot API and write data.json.
+
+Reads RIOT_API_KEY (secret) and RIOT_ID (e.g. "Name#TAG") from the environment.
+Region is fixed to EUW (platform euw1, regional routing europe).
+"""
+from __future__ import annotations
+
+import json
+import os
+import sys
+import time
+import urllib.error
+import urllib.request
+from collections import Counter, defaultdict
+
+PLATFORM = "euw1"
+REGION = "europe"
+MATCH_COUNT = 20
+QUEUE_SOLO_DUO = 420  # RANKED_SOLO_5x5
+
+
+def api_get(url: str, api_key: str) -> dict:
+    req = urllib.request.Request(url, headers={"X-Riot-Token": api_key})
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < 4:
+                retry_after = int(e.headers.get("Retry-After", "1"))
+                time.sleep(retry_after + 1)
+                continue
+            raise
+    raise RuntimeError(f"Failed to fetch {url} after retries")
+
+
+def get_puuid(game_name: str, tag_line: str, api_key: str) -> str:
+    url = f"https://{REGION}.api.riotgames.com/riot/account/v1/accounts/by-riot-id/{game_name}/{tag_line}"
+    return api_get(url, api_key)["puuid"]
+
+
+def get_ranked_stats(puuid: str, api_key: str) -> dict | None:
+    url = f"https://{PLATFORM}.api.riotgames.com/lol/league/v4/entries/by-puuid/{puuid}"
+    entries = api_get(url, api_key)
+    for entry in entries:
+        if entry.get("queueType") == "RANKED_SOLO_5x5":
+            wins = entry["wins"]
+            losses = entry["losses"]
+            total = wins + losses
+            return {
+                "tier": entry.get("tier"),
+                "rank": entry.get("rank"),
+                "leaguePoints": entry.get("leaguePoints"),
+                "wins": wins,
+                "losses": losses,
+                "winrate": round(100 * wins / total, 1) if total else None,
+            }
+    return None
+
+
+def get_match_ids(puuid: str, api_key: str, count: int) -> list[str]:
+    url = (
+        f"https://{REGION}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids"
+        f"?start=0&count={count}&queue={QUEUE_SOLO_DUO}"
+    )
+    return api_get(url, api_key)
+
+
+def get_match(match_id: str, api_key: str) -> dict:
+    url = f"https://{REGION}.api.riotgames.com/lol/match/v5/matches/{match_id}"
+    return api_get(url, api_key)
+
+
+def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[list[dict], dict]:
+    matches = []
+    champ_stats: dict[str, dict] = defaultdict(lambda: {"games": 0, "wins": 0})
+
+    for match_id in match_ids:
+        match = get_match(match_id, api_key)
+        info = match["info"]
+        participant = next(p for p in info["participants"] if p["puuid"] == puuid)
+
+        duration_min = max(info["gameDuration"] / 60, 1 / 60)
+        kills = participant["kills"]
+        deaths = participant["deaths"]
+        assists = participant["assists"]
+        kda = round((kills + assists) / deaths, 2) if deaths else float(kills + assists)
+        cs = participant["totalMinionsKilled"] + participant["neutralMinionsKilled"]
+        cs_per_min = round(cs / duration_min, 2)
+        win = participant["win"]
+        champion = participant["championName"]
+
+        matches.append(
+            {
+                "matchId": match_id,
+                "champion": champion,
+                "kills": kills,
+                "deaths": deaths,
+                "assists": assists,
+                "kda": kda,
+                "csPerMin": cs_per_min,
+                "win": win,
+                "gameCreation": info["gameCreation"],
+            }
+        )
+
+        champ_stats[champion]["games"] += 1
+        if win:
+            champ_stats[champion]["wins"] += 1
+
+    top_champions = Counter({c: s["games"] for c, s in champ_stats.items()}).most_common(3)
+    top_champion_stats = []
+    for champ, games in top_champions:
+        wins = champ_stats[champ]["wins"]
+        top_champion_stats.append(
+            {
+                "champion": champ,
+                "games": games,
+                "wins": wins,
+                "winrate": round(100 * wins / games, 1) if games else None,
+            }
+        )
+
+    return matches, {"topChampions": top_champion_stats}
+
+
+def main() -> None:
+    api_key = os.environ.get("RIOT_API_KEY")
+    riot_id = os.environ.get("RIOT_ID")
+    if not api_key or not riot_id:
+        print("RIOT_API_KEY and RIOT_ID must be set", file=sys.stderr)
+        sys.exit(1)
+    if "#" not in riot_id:
+        print("RIOT_ID must be in the form 'GameName#TagLine'", file=sys.stderr)
+        sys.exit(1)
+
+    game_name, tag_line = riot_id.split("#", 1)
+
+    puuid = get_puuid(game_name, tag_line, api_key)
+    ranked_stats = get_ranked_stats(puuid, api_key)
+    match_ids = get_match_ids(puuid, api_key, MATCH_COUNT)
+    matches, champion_summary = summarize_matches(match_ids, puuid, api_key)
+
+    data = {
+        "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "riotId": riot_id,
+        "region": "EUW",
+        "soloDuo": ranked_stats,
+        "recentMatches": matches,
+        "topChampions": champion_summary["topChampions"],
+    }
+
+    with open("data.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    print(f"Wrote data.json with {len(matches)} matches")
+
+
+if __name__ == "__main__":
+    main()
