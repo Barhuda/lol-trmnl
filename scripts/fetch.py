@@ -20,7 +20,14 @@ QUEUE_SOLO_DUO = 420  # RANKED_SOLO_5x5
 
 
 def api_get(url: str, api_key: str) -> dict:
-    req = urllib.request.Request(url, headers={"X-Riot-Token": api_key})
+    req = urllib.request.Request(
+        url,
+        headers={
+            "X-Riot-Token": api_key,
+            "User-Agent": "Mozilla/5.0 (compatible; lol-trmnl/1.0)",
+            "Accept": "application/json",
+        },
+    )
     for attempt in range(5):
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
