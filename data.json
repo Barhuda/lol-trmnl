@@ -1,0 +1,255 @@
+{
+  "updatedAt": "2026-08-27T15:26:30Z",
+  "riotId": "BarHuda#EUW",
+  "region": "EUW",
+  "soloDuo": {
+    "tier": "SILVER",
+    "rank": "I",
+    "leaguePoints": 42,
+    "wins": 26,
+    "losses": 46,
+    "winrate": 36.1
+  },
+  "recentMatches": [
+    {
+      "matchId": "EUW1_7963812056",
+      "champion": "Chogath",
+      "kills": 8,
+      "deaths": 7,
+      "assists": 8,
+      "kda": 2.29,
+      "csPerMin": 6.36,
+      "win": true,
+      "gameCreation": 1787841560714
+    },
+    {
+      "matchId": "EUW1_7962053195",
+      "champion": "Lillia",
+      "kills": 2,
+      "deaths": 2,
+      "assists": 14,
+      "kda": 8.0,
+      "csPerMin": 8.37,
+      "win": true,
+      "gameCreation": 1787690465816
+    },
+    {
+      "matchId": "EUW1_7962035528",
+      "champion": "Lillia",
+      "kills": 1,
+      "deaths": 2,
+      "assists": 1,
+      "kda": 1.0,
+      "csPerMin": 6.67,
+      "win": false,
+      "gameCreation": 1787689213306
+    },
+    {
+      "matchId": "EUW1_7961974234",
+      "champion": "Graves",
+      "kills": 2,
+      "deaths": 10,
+      "assists": 14,
+      "kda": 1.6,
+      "csPerMin": 6.35,
+      "win": false,
+      "gameCreation": 1787687122134
+    },
+    {
+      "matchId": "EUW1_7961934453",
+      "champion": "Lillia",
+      "kills": 3,
+      "deaths": 6,
+      "assists": 3,
+      "kda": 1.0,
+      "csPerMin": 6.87,
+      "win": false,
+      "gameCreation": 1787685596393
+    },
+    {
+      "matchId": "EUW1_7961793545",
+      "champion": "Lillia",
+      "kills": 9,
+      "deaths": 7,
+      "assists": 9,
+      "kda": 2.57,
+      "csPerMin": 5.92,
+      "win": false,
+      "gameCreation": 1787678427956
+    },
+    {
+      "matchId": "EUW1_7961671962",
+      "champion": "Lillia",
+      "kills": 6,
+      "deaths": 8,
+      "assists": 7,
+      "kda": 1.62,
+      "csPerMin": 6.53,
+      "win": false,
+      "gameCreation": 1787672365122
+    },
+    {
+      "matchId": "EUW1_7961078949",
+      "champion": "Lillia",
+      "kills": 9,
+      "deaths": 7,
+      "assists": 11,
+      "kda": 2.86,
+      "csPerMin": 6.52,
+      "win": false,
+      "gameCreation": 1787604884453
+    },
+    {
+      "matchId": "EUW1_7961020838",
+      "champion": "Lillia",
+      "kills": 9,
+      "deaths": 4,
+      "assists": 7,
+      "kda": 4.0,
+      "csPerMin": 7.34,
+      "win": true,
+      "gameCreation": 1787602432563
+    },
+    {
+      "matchId": "EUW1_7960981619",
+      "champion": "Lillia",
+      "kills": 7,
+      "deaths": 3,
+      "assists": 7,
+      "kda": 4.67,
+      "csPerMin": 6.71,
+      "win": true,
+      "gameCreation": 1787600699104
+    },
+    {
+      "matchId": "EUW1_7960761406",
+      "champion": "Sejuani",
+      "kills": 4,
+      "deaths": 9,
+      "assists": 16,
+      "kda": 2.22,
+      "csPerMin": 5.04,
+      "win": false,
+      "gameCreation": 1787591621591
+    },
+    {
+      "matchId": "EUW1_7960733101",
+      "champion": "Lillia",
+      "kills": 9,
+      "deaths": 4,
+      "assists": 3,
+      "kda": 3.0,
+      "csPerMin": 6.72,
+      "win": false,
+      "gameCreation": 1787589796797
+    },
+    {
+      "matchId": "EUW1_7959344816",
+      "champion": "Lillia",
+      "kills": 5,
+      "deaths": 9,
+      "assists": 16,
+      "kda": 2.33,
+      "csPerMin": 6.22,
+      "win": false,
+      "gameCreation": 1787481808456
+    },
+    {
+      "matchId": "EUW1_7959322764",
+      "champion": "Belveth",
+      "kills": 2,
+      "deaths": 9,
+      "assists": 3,
+      "kda": 0.56,
+      "csPerMin": 5.96,
+      "win": false,
+      "gameCreation": 1787480011637
+    },
+    {
+      "matchId": "EUW1_7959290236",
+      "champion": "Lillia",
+      "kills": 3,
+      "deaths": 9,
+      "assists": 9,
+      "kda": 1.33,
+      "csPerMin": 5.93,
+      "win": false,
+      "gameCreation": 1787477814110
+    },
+    {
+      "matchId": "EUW1_7959000573",
+      "champion": "Lillia",
+      "kills": 4,
+      "deaths": 8,
+      "assists": 5,
+      "kda": 1.12,
+      "csPerMin": 5.71,
+      "win": false,
+      "gameCreation": 1787434960995
+    },
+    {
+      "matchId": "EUW1_7958945662",
+      "champion": "Lillia",
+      "kills": 2,
+      "deaths": 10,
+      "assists": 9,
+      "kda": 1.1,
+      "csPerMin": 5.27,
+      "win": false,
+      "gameCreation": 1787432471679
+    },
+    {
+      "matchId": "EUW1_7958879204",
+      "champion": "Belveth",
+      "kills": 3,
+      "deaths": 13,
+      "assists": 13,
+      "kda": 1.23,
+      "csPerMin": 4.99,
+      "win": true,
+      "gameCreation": 1787429954938
+    },
+    {
+      "matchId": "EUW1_7958839418",
+      "champion": "Lillia",
+      "kills": 2,
+      "deaths": 5,
+      "assists": 2,
+      "kda": 0.8,
+      "csPerMin": 6.14,
+      "win": false,
+      "gameCreation": 1787428322644
+    },
+    {
+      "matchId": "EUW1_7958524186",
+      "champion": "Lillia",
+      "kills": 6,
+      "deaths": 3,
+      "assists": 7,
+      "kda": 4.33,
+      "csPerMin": 5.88,
+      "win": true,
+      "gameCreation": 1787411243439
+    }
+  ],
+  "topChampions": [
+    {
+      "champion": "Lillia",
+      "games": 15,
+      "wins": 4,
+      "winrate": 26.7
+    },
+    {
+      "champion": "Belveth",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0
+    },
+    {
+      "champion": "Chogath",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0
+    }
+  ]
+}
