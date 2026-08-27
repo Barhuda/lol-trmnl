@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T16:49:01Z",
+  "updatedAt": "2026-08-27T16:55:00Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
@@ -516,5 +516,17 @@
     }
   ],
   "avgKda": 2.27,
-  "avgCsPerMin": 6.36
+  "avgCsPerMin": 6.36,
+  "lpHistory": [
+    {
+      "totalGames": 73,
+      "leaguePoints": 21,
+      "tier": "SILVER",
+      "rank": "I",
+      "timestamp": "2026-08-27T16:55:00Z"
+    }
+  ],
+  "lpChartPoints": "150.0,60.0",
+  "lpChartMin": 21,
+  "lpChartMax": 21
 }
