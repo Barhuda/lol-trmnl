@@ -1,16 +1,27 @@
 {
-  "updatedAt": "2026-08-27T15:43:17Z",
+  "updatedAt": "2026-08-27T16:11:58Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "soloDuo": {
     "tier": "SILVER",
     "rank": "I",
-    "leaguePoints": 42,
+    "leaguePoints": 21,
     "wins": 26,
-    "losses": 46,
-    "winrate": 36.1
+    "losses": 47,
+    "winrate": 35.6
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7963865918",
+      "champion": "Shyvana",
+      "kills": 6,
+      "deaths": 11,
+      "assists": 17,
+      "kda": 2.09,
+      "csPerMin": 7.56,
+      "win": false,
+      "gameCreation": 1787844462581
+    },
     {
       "matchId": "EUW1_7963812056",
       "champion": "Chogath",
@@ -219,25 +230,14 @@
       "csPerMin": 6.14,
       "win": false,
       "gameCreation": 1787428322644
-    },
-    {
-      "matchId": "EUW1_7958524186",
-      "champion": "Lillia",
-      "kills": 6,
-      "deaths": 3,
-      "assists": 7,
-      "kda": 4.33,
-      "csPerMin": 5.88,
-      "win": true,
-      "gameCreation": 1787411243439
     }
   ],
   "topChampions": [
     {
       "champion": "Lillia",
-      "games": 15,
-      "wins": 4,
-      "winrate": 26.7
+      "games": 14,
+      "wins": 3,
+      "winrate": 21.4
     },
     {
       "champion": "Belveth",
@@ -246,10 +246,10 @@
       "winrate": 50.0
     },
     {
-      "champion": "Chogath",
+      "champion": "Shyvana",
       "games": 1,
-      "wins": 1,
-      "winrate": 100.0
+      "wins": 0,
+      "winrate": 0.0
     }
   ]
 }
