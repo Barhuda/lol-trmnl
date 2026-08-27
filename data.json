@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T16:12:31Z",
+  "updatedAt": "2026-08-27T16:49:01Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
@@ -21,7 +21,21 @@
       "kda": 2.09,
       "csPerMin": 7.56,
       "win": false,
-      "gameCreation": 1787844462581
+      "gameCreation": 1787844462581,
+      "durationMin": 42,
+      "position": "JUNGLE",
+      "damageDealt": 44746,
+      "damageTaken": 58875,
+      "goldEarned": 20451,
+      "visionScore": 25,
+      "items": [
+        3161,
+        3078,
+        6333,
+        6665,
+        3008,
+        3053
+      ]
     },
     {
       "matchId": "EUW1_7963812056",
@@ -32,7 +46,21 @@
       "kda": 2.29,
       "csPerMin": 6.36,
       "win": true,
-      "gameCreation": 1787841560714
+      "gameCreation": 1787841560714,
+      "durationMin": 40,
+      "position": "JUNGLE",
+      "damageDealt": 38275,
+      "damageTaken": 68023,
+      "goldEarned": 17253,
+      "visionScore": 39,
+      "items": [
+        3152,
+        3009,
+        4633,
+        3742,
+        4401,
+        1057
+      ]
     },
     {
       "matchId": "EUW1_7962053195",
@@ -43,7 +71,19 @@
       "kda": 8.0,
       "csPerMin": 8.37,
       "win": true,
-      "gameCreation": 1787690465816
+      "gameCreation": 1787690465816,
+      "durationMin": 27,
+      "position": "JUNGLE",
+      "damageDealt": 23364,
+      "damageTaken": 29221,
+      "goldEarned": 11829,
+      "visionScore": 18,
+      "items": [
+        3157,
+        6653,
+        3020,
+        4633
+      ]
     },
     {
       "matchId": "EUW1_7962035528",
@@ -54,7 +94,18 @@
       "kda": 1.0,
       "csPerMin": 6.67,
       "win": false,
-      "gameCreation": 1787689213306
+      "gameCreation": 1787689213306,
+      "durationMin": 17,
+      "position": "JUNGLE",
+      "damageDealt": 5495,
+      "damageTaken": 11795,
+      "goldEarned": 5766,
+      "visionScore": 18,
+      "items": [
+        3047,
+        6653,
+        1052
+      ]
     },
     {
       "matchId": "EUW1_7961974234",
@@ -65,7 +116,20 @@
       "kda": 1.6,
       "csPerMin": 6.35,
       "win": false,
-      "gameCreation": 1787687122134
+      "gameCreation": 1787687122134,
+      "durationMin": 31,
+      "position": "JUNGLE",
+      "damageDealt": 14014,
+      "damageTaken": 38115,
+      "goldEarned": 11470,
+      "visionScore": 27,
+      "items": [
+        3111,
+        6697,
+        6610,
+        3071,
+        1036
+      ]
     },
     {
       "matchId": "EUW1_7961934453",
@@ -76,7 +140,21 @@
       "kda": 1.0,
       "csPerMin": 6.87,
       "win": false,
-      "gameCreation": 1787685596393
+      "gameCreation": 1787685596393,
+      "durationMin": 22,
+      "position": "JUNGLE",
+      "damageDealt": 7541,
+      "damageTaken": 26103,
+      "goldEarned": 8878,
+      "visionScore": 16,
+      "items": [
+        3047,
+        6653,
+        2055,
+        4633,
+        1029,
+        1052
+      ]
     },
     {
       "matchId": "EUW1_7961793545",
@@ -87,7 +165,21 @@
       "kda": 2.57,
       "csPerMin": 5.92,
       "win": false,
-      "gameCreation": 1787678427956
+      "gameCreation": 1787678427956,
+      "durationMin": 34,
+      "position": "JUNGLE",
+      "damageDealt": 33201,
+      "damageTaken": 43604,
+      "goldEarned": 14058,
+      "visionScore": 31,
+      "items": [
+        3157,
+        6653,
+        4633,
+        3020,
+        1026,
+        1011
+      ]
     },
     {
       "matchId": "EUW1_7961671962",
@@ -98,7 +190,21 @@
       "kda": 1.62,
       "csPerMin": 6.53,
       "win": false,
-      "gameCreation": 1787672365122
+      "gameCreation": 1787672365122,
+      "durationMin": 39,
+      "position": "JUNGLE",
+      "damageDealt": 28114,
+      "damageTaken": 56990,
+      "goldEarned": 15230,
+      "visionScore": 38,
+      "items": [
+        3157,
+        4633,
+        3116,
+        6653,
+        3047,
+        1057
+      ]
     },
     {
       "matchId": "EUW1_7961078949",
@@ -109,7 +215,21 @@
       "kda": 2.86,
       "csPerMin": 6.52,
       "win": false,
-      "gameCreation": 1787604884453
+      "gameCreation": 1787604884453,
+      "durationMin": 41,
+      "position": "JUNGLE",
+      "damageDealt": 48426,
+      "damageTaken": 61398,
+      "goldEarned": 17490,
+      "visionScore": 38,
+      "items": [
+        3157,
+        6653,
+        3116,
+        3047,
+        4633,
+        3089
+      ]
     },
     {
       "matchId": "EUW1_7961020838",
@@ -120,7 +240,21 @@
       "kda": 4.0,
       "csPerMin": 7.34,
       "win": true,
-      "gameCreation": 1787602432563
+      "gameCreation": 1787602432563,
+      "durationMin": 36,
+      "position": "JUNGLE",
+      "damageDealt": 27373,
+      "damageTaken": 47521,
+      "goldEarned": 16107,
+      "visionScore": 37,
+      "items": [
+        3157,
+        6653,
+        3047,
+        4633,
+        3108,
+        3147
+      ]
     },
     {
       "matchId": "EUW1_7960981619",
@@ -131,7 +265,19 @@
       "kda": 4.67,
       "csPerMin": 6.71,
       "win": true,
-      "gameCreation": 1787600699104
+      "gameCreation": 1787600699104,
+      "durationMin": 25,
+      "position": "JUNGLE",
+      "damageDealt": 10777,
+      "damageTaken": 19374,
+      "goldEarned": 11262,
+      "visionScore": 21,
+      "items": [
+        3157,
+        6653,
+        4633,
+        3047
+      ]
     },
     {
       "matchId": "EUW1_7960761406",
@@ -142,7 +288,20 @@
       "kda": 2.22,
       "csPerMin": 5.04,
       "win": false,
-      "gameCreation": 1787591621591
+      "gameCreation": 1787591621591,
+      "durationMin": 33,
+      "position": "JUNGLE",
+      "damageDealt": 25841,
+      "damageTaken": 59004,
+      "goldEarned": 11973,
+      "visionScore": 30,
+      "items": [
+        6665,
+        3084,
+        3068,
+        3076,
+        3111
+      ]
     },
     {
       "matchId": "EUW1_7960733101",
@@ -153,7 +312,20 @@
       "kda": 3.0,
       "csPerMin": 6.72,
       "win": false,
-      "gameCreation": 1787589796797
+      "gameCreation": 1787589796797,
+      "durationMin": 22,
+      "position": "JUNGLE",
+      "damageDealt": 18921,
+      "damageTaken": 27614,
+      "goldEarned": 11140,
+      "visionScore": 20,
+      "items": [
+        4633,
+        6653,
+        3111,
+        1029,
+        1052
+      ]
     },
     {
       "matchId": "EUW1_7959344816",
@@ -164,7 +336,21 @@
       "kda": 2.33,
       "csPerMin": 6.22,
       "win": false,
-      "gameCreation": 1787481808456
+      "gameCreation": 1787481808456,
+      "durationMin": 37,
+      "position": "JUNGLE",
+      "damageDealt": 25950,
+      "damageTaken": 53472,
+      "goldEarned": 15535,
+      "visionScore": 23,
+      "items": [
+        3157,
+        6653,
+        3089,
+        3116,
+        3020,
+        3108
+      ]
     },
     {
       "matchId": "EUW1_7959322764",
@@ -175,7 +361,18 @@
       "kda": 0.56,
       "csPerMin": 5.96,
       "win": false,
-      "gameCreation": 1787480011637
+      "gameCreation": 1787480011637,
+      "durationMin": 26,
+      "position": "JUNGLE",
+      "damageDealt": 8064,
+      "damageTaken": 29487,
+      "goldEarned": 8299,
+      "visionScore": 27,
+      "items": [
+        6631,
+        6672,
+        3047
+      ]
     },
     {
       "matchId": "EUW1_7959290236",
@@ -186,7 +383,19 @@
       "kda": 1.33,
       "csPerMin": 5.93,
       "win": false,
-      "gameCreation": 1787477814110
+      "gameCreation": 1787477814110,
+      "durationMin": 32,
+      "position": "JUNGLE",
+      "damageDealt": 26006,
+      "damageTaken": 43540,
+      "goldEarned": 11742,
+      "visionScore": 35,
+      "items": [
+        3157,
+        3111,
+        4633,
+        6653
+      ]
     },
     {
       "matchId": "EUW1_7959000573",
@@ -197,7 +406,21 @@
       "kda": 1.12,
       "csPerMin": 5.71,
       "win": false,
-      "gameCreation": 1787434960995
+      "gameCreation": 1787434960995,
+      "durationMin": 33,
+      "position": "JUNGLE",
+      "damageDealt": 25781,
+      "damageTaken": 41039,
+      "goldEarned": 12388,
+      "visionScore": 34,
+      "items": [
+        2421,
+        6653,
+        3047,
+        4633,
+        1058,
+        1058
+      ]
     },
     {
       "matchId": "EUW1_7958945662",
@@ -208,7 +431,21 @@
       "kda": 1.1,
       "csPerMin": 5.27,
       "win": false,
-      "gameCreation": 1787432471679
+      "gameCreation": 1787432471679,
+      "durationMin": 36,
+      "position": "JUNGLE",
+      "damageDealt": 28043,
+      "damageTaken": 56493,
+      "goldEarned": 11372,
+      "visionScore": 28,
+      "items": [
+        4633,
+        6653,
+        3111,
+        8010,
+        1052,
+        1029
+      ]
     },
     {
       "matchId": "EUW1_7958879204",
@@ -219,7 +456,21 @@
       "kda": 1.23,
       "csPerMin": 4.99,
       "win": true,
-      "gameCreation": 1787429954938
+      "gameCreation": 1787429954938,
+      "durationMin": 38,
+      "position": "JUNGLE",
+      "damageDealt": 13968,
+      "damageTaken": 52820,
+      "goldEarned": 13542,
+      "visionScore": 26,
+      "items": [
+        6631,
+        6672,
+        6333,
+        1043,
+        1043,
+        3111
+      ]
     },
     {
       "matchId": "EUW1_7958839418",
@@ -230,7 +481,18 @@
       "kda": 0.8,
       "csPerMin": 6.14,
       "win": false,
-      "gameCreation": 1787428322644
+      "gameCreation": 1787428322644,
+      "durationMin": 23,
+      "position": "JUNGLE",
+      "damageDealt": 8640,
+      "damageTaken": 22498,
+      "goldEarned": 7702,
+      "visionScore": 15,
+      "items": [
+        4633,
+        6653,
+        3047
+      ]
     }
   ],
   "topChampions": [
