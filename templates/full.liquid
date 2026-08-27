@@ -2,14 +2,14 @@
 {% assign last3 = recentMatches | slice: 0, 3 %}
 
 <div class="view view--full">
-<div style="background: #ffffff; color: #000000; width: 800px; height: 480px; padding: 20px 26px; display: flex; flex-direction: column; font-family: monospace; box-sizing: border-box;">
+<div style="background: #ffffff; color: #000000; width: 800px; height: 480px; padding: 16px 26px; display: flex; flex-direction: column; font-family: monospace; box-sizing: border-box;">
 
   <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000; padding-bottom: 8px; margin-bottom: 12px;">
     <span style="font-size: 17px; font-weight: 700; letter-spacing: 0.5px;">{{ riotId | upcase }}</span>
     <span style="font-size: 12px; color: #444;">SOLO/DUO &middot; {{ region }}</span>
   </div>
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 14px;">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 10px;">
 
     <div style="border-right: 2px solid #000; padding-right: 18px; display: flex; flex-direction: column; justify-content: center;">
       {% if soloDuo %}
@@ -45,6 +45,22 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div style="border-top: 2px solid #000; padding-top: 8px; margin-bottom: 12px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+      <span style="font-size: 9px; color: #555;">RANKED LP TREND ({{ lpHistory | size }} GAMES)</span>
+      {% if lpChartMin %}
+        <span style="font-size: 9px; color: #444;">{{ lpChartMin }}&ndash;{{ lpChartMax }} LP</span>
+      {% endif %}
+    </div>
+    {% if lpChartPoints and lpChartPoints != "" %}
+      <svg viewBox="0 0 300 60" width="748" height="42" preserveAspectRatio="none" style="display: block;">
+        <polyline points="{{ lpChartPoints }}" fill="none" stroke="#000" stroke-width="2.5" />
+      </svg>
+    {% else %}
+      <div style="font-size: 10px; color: #666; height: 42px; display: flex; align-items: center;">Sammle Daten &ndash; Trend erscheint nach dem naechsten gewerteten Spiel.</div>
+    {% endif %}
   </div>
 
   <div style="border-top: 2px solid #000; padding-top: 10px; margin-bottom: 12px;">

@@ -17,6 +17,9 @@ PLATFORM = "euw1"
 REGION = "europe"
 MATCH_COUNT = 20
 QUEUE_SOLO_DUO = 420  # RANKED_SOLO_5x5
+LP_HISTORY_LENGTH = 20
+CHART_WIDTH = 300
+CHART_HEIGHT = 60
 
 
 def api_get(url: str, api_key: str) -> dict:
@@ -153,6 +156,58 @@ def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[l
     }
 
 
+def load_previous_data() -> dict | None:
+    try:
+        with open("data.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+
+
+def update_lp_history(previous: dict | None, ranked_stats: dict | None, timestamp: str) -> list[dict]:
+    history = list(previous.get("lpHistory", [])) if previous else []
+    if not ranked_stats:
+        return history
+
+    total_games = ranked_stats["wins"] + ranked_stats["losses"]
+    last_total_games = history[-1]["totalGames"] if history else None
+
+    if last_total_games != total_games:
+        history.append(
+            {
+                "totalGames": total_games,
+                "leaguePoints": ranked_stats["leaguePoints"],
+                "tier": ranked_stats["tier"],
+                "rank": ranked_stats["rank"],
+                "timestamp": timestamp,
+            }
+        )
+
+    return history[-LP_HISTORY_LENGTH:]
+
+
+def build_lp_chart(history: list[dict]) -> dict:
+    if not history:
+        return {"points": "", "min": None, "max": None}
+
+    lp_values = [h["leaguePoints"] for h in history]
+    lo, hi = min(lp_values), max(lp_values)
+    span = hi - lo or 1
+
+    if len(history) == 1:
+        xs = [CHART_WIDTH / 2]
+    else:
+        step = CHART_WIDTH / (len(history) - 1)
+        xs = [round(i * step, 1) for i in range(len(history))]
+
+    points = " ".join(
+        f"{x},{round(CHART_HEIGHT - (lp - lo) / span * CHART_HEIGHT, 1)}"
+        for x, lp in zip(xs, lp_values)
+    )
+
+    return {"points": points, "min": lo, "max": hi}
+
+
 def main() -> None:
     api_key = os.environ.get("RIOT_API_KEY")
     riot_id = os.environ.get("RIOT_ID")
@@ -165,14 +220,19 @@ def main() -> None:
 
     game_name, tag_line = riot_id.split("#", 1)
 
+    previous = load_previous_data()
     puuid = get_puuid(game_name, tag_line, api_key)
     ranked_stats = get_ranked_stats(puuid, api_key)
     match_ids = get_match_ids(puuid, api_key, MATCH_COUNT)
     matches, champion_summary = summarize_matches(match_ids, puuid, api_key)
     ddragon_version = get_ddragon_version()
 
+    updated_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    lp_history = update_lp_history(previous, ranked_stats, updated_at)
+    lp_chart = build_lp_chart(lp_history)
+
     data = {
-        "updatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "updatedAt": updated_at,
         "riotId": riot_id,
         "region": "EUW",
         "ddragonVersion": ddragon_version,
@@ -181,6 +241,10 @@ def main() -> None:
         "topChampions": champion_summary["topChampions"],
         "avgKda": champion_summary["avgKda"],
         "avgCsPerMin": champion_summary["avgCsPerMin"],
+        "lpHistory": lp_history,
+        "lpChartPoints": lp_chart["points"],
+        "lpChartMin": lp_chart["min"],
+        "lpChartMax": lp_chart["max"],
     }
 
     with open("data.json", "w", encoding="utf-8") as f:
