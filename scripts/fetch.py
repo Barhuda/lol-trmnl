@@ -20,6 +20,14 @@ QUEUE_SOLO_DUO = 420  # RANKED_SOLO_5x5
 LP_HISTORY_LENGTH = 20
 CHART_WIDTH = 300
 CHART_HEIGHT = 60
+OPPONENT_RANK_MATCH_COUNT = 3  # only the most recent N matches get an avg-opponent-rank lookup
+
+TIER_ORDER = [
+    "IRON", "BRONZE", "SILVER", "GOLD", "PLATINUM",
+    "EMERALD", "DIAMOND", "MASTER", "GRANDMASTER", "CHALLENGER",
+]
+DIVISION_ORDER = {"IV": 0, "III": 1, "II": 2, "I": 3}
+DIVISION_LABELS = ["IV", "III", "II", "I"]
 
 
 def api_get(url: str, api_key: str) -> dict:
@@ -88,11 +96,43 @@ def get_ddragon_version() -> str:
         return json.loads(resp.read().decode("utf-8"))[0]
 
 
+def rank_score(tier: str, rank: str | None, lp: int) -> int:
+    tier_idx = TIER_ORDER.index(tier)
+    div_idx = DIVISION_ORDER.get(rank, 0)
+    return tier_idx * 400 + div_idx * 100 + lp
+
+
+def score_to_rank_label(score: float) -> str:
+    tier_idx = min(int(score // 400), len(TIER_ORDER) - 1)
+    remainder = score - tier_idx * 400
+    div_idx = min(int(remainder // 100), 3)
+    tier = TIER_ORDER[tier_idx]
+    if tier_idx >= TIER_ORDER.index("MASTER"):
+        return tier.capitalize()
+    return f"{tier.capitalize()} {DIVISION_LABELS[div_idx]}"
+
+
+def get_avg_opponent_rank(match: dict, puuid: str, api_key: str) -> str | None:
+    info = match["info"]
+    me = next(p for p in info["participants"] if p["puuid"] == puuid)
+    opponents = [p for p in info["participants"] if p["teamId"] != me["teamId"]]
+
+    scores = []
+    for opp in opponents:
+        stats = get_ranked_stats(opp["puuid"], api_key)
+        if stats and stats["tier"]:
+            scores.append(rank_score(stats["tier"], stats["rank"], stats["leaguePoints"] or 0))
+
+    if not scores:
+        return None
+    return score_to_rank_label(sum(scores) / len(scores))
+
+
 def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[list[dict], dict]:
     matches = []
     champ_stats: dict[str, dict] = defaultdict(lambda: {"games": 0, "wins": 0})
 
-    for match_id in match_ids:
+    for index, match_id in enumerate(match_ids):
         match = get_match(match_id, api_key)
         info = match["info"]
         participant = next(p for p in info["participants"] if p["puuid"] == puuid)
@@ -110,6 +150,9 @@ def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[l
         damage_dealt = participant["totalDamageDealtToChampions"]
         vision_score = participant["visionScore"]
         gold_earned = participant["goldEarned"]
+        avg_opponent_rank = (
+            get_avg_opponent_rank(match, puuid, api_key) if index < OPPONENT_RANK_MATCH_COUNT else None
+        )
 
         matches.append(
             {
@@ -131,6 +174,7 @@ def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[l
                 "goldPerMin": round(gold_earned / duration_min),
                 "visionScore": vision_score,
                 "visionScorePerMin": round(vision_score / duration_min, 2),
+                "avgOpponentRank": avg_opponent_rank,
                 "items": items,
             }
         )

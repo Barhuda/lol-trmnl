@@ -89,6 +89,9 @@
             <span>Dmg/min {{ m.damagePerMin }}</span>
             <span>Gold/min {{ m.goldPerMin }}</span>
           </div>
+          {% if m.avgOpponentRank %}
+            <div style="font-size: 9px; color: #333; margin-top: 3px; border-top: 1px solid #ccc; padding-top: 3px;">Gegner &oslash; {{ m.avgOpponentRank }}</div>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
