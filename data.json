@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T12:33:25Z",
+  "updatedAt": "2026-08-28T13:29:57Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
@@ -513,6 +513,12 @@
       "games": 1,
       "wins": 0,
       "winrate": 0.0
+    },
+    {
+      "champion": "Chogath",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0
     }
   ],
   "avgKda": 2.27,
