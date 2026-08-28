@@ -133,7 +133,7 @@ def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[l
         if win:
             champ_stats[champion]["wins"] += 1
 
-    top_champions = Counter({c: s["games"] for c, s in champ_stats.items()}).most_common(3)
+    top_champions = Counter({c: s["games"] for c, s in champ_stats.items()}).most_common(4)
     top_champion_stats = []
     for champ, games in top_champions:
         wins = champ_stats[champ]["wins"]

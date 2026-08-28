@@ -95,23 +95,26 @@
     </div>
   </div>
 
-  <div style="border-top: 2px solid #000; padding-top: 10px; flex: 1;">
+  <div style="border-top: 2px solid #000; padding-top: 8px; flex: 1;">
     <div style="font-size: 9px; color: #555; margin-bottom: 6px;">TOP CHAMPIONS</div>
-    <div style="display: flex; flex-direction: column; gap: 5px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(2, auto); gap: 6px 20px;">
       {% for c in topChampions %}
-        <div style="display: grid; grid-template-columns: 28px 90px 34px 1fr 40px; align-items: center; font-size: 12px; gap: 8px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
           <img
             src="https://ddragon.leagueoflegends.com/cdn/{{ ddragonVersion }}/img/champion/{{ c.champion }}.png"
-            width="28" height="28"
-            style="border: 1.5px solid #000; object-fit: cover;"
+            width="26" height="26"
+            style="border: 1.5px solid #000; object-fit: cover; flex-shrink: 0;"
             onerror="this.style.display='none'"
           />
-          <span>{{ c.champion }}</span>
-          <span style="color: #444;">{{ c.games }}g</span>
-          <div style="height: 8px; border: 1.5px solid #000; position: relative;">
-            <div style="position:absolute; top:0; left:0; bottom:0; width: {{ c.winrate }}%; background:#000;"></div>
+          <div style="flex: 1;">
+            <div style="display: flex; justify-content: space-between; font-size: 11px;">
+              <span>{{ c.champion }}</span>
+              <span style="color: #444;">{{ c.games }}g &middot; {{ c.winrate }}%</span>
+            </div>
+            <div style="height: 6px; border: 1.5px solid #000; position: relative; margin-top: 2px;">
+              <div style="position:absolute; top:0; left:0; bottom:0; width: {{ c.winrate }}%; background:#000;"></div>
+            </div>
           </div>
-          <span style="text-align: right;">{{ c.winrate }}%</span>
         </div>
       {% endfor %}
     </div>
