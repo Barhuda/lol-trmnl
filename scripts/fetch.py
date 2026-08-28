@@ -107,6 +107,8 @@ def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[l
         win = participant["win"]
         champion = participant["championName"]
         items = [participant[f"item{i}"] for i in range(6) if participant[f"item{i}"]]
+        damage_dealt = participant["totalDamageDealtToChampions"]
+        vision_score = participant["visionScore"]
 
         matches.append(
             {
@@ -121,10 +123,12 @@ def summarize_matches(match_ids: list[str], puuid: str, api_key: str) -> tuple[l
                 "gameCreation": info["gameCreation"],
                 "durationMin": round(duration_min),
                 "position": participant.get("individualPosition"),
-                "damageDealt": participant["totalDamageDealtToChampions"],
+                "damageDealt": damage_dealt,
+                "damagePerMin": round(damage_dealt / duration_min),
                 "damageTaken": participant["totalDamageTaken"],
                 "goldEarned": participant["goldEarned"],
-                "visionScore": participant["visionScore"],
+                "visionScore": vision_score,
+                "visionScorePerMin": round(vision_score / duration_min, 2),
                 "items": items,
             }
         )
