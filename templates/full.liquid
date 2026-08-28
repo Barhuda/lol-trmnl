@@ -1,4 +1,3 @@
-{% assign matches_oldest_first = recentMatches | reverse %}
 {% assign last3 = recentMatches | slice: 0, 3 %}
 
 <div class="view view--full">
@@ -23,9 +22,9 @@
 
     <div style="display: flex; flex-direction: column; justify-content: center; gap: 10px;">
       <div>
-        <div style="font-size: 9px; color: #555; margin-bottom: 4px;">LAST {{ recentMatches | size }} (OLDEST &rarr; NEWEST)</div>
+        <div style="font-size: 9px; color: #555; margin-bottom: 4px;">LAST {{ recentMatches | size }} (NEWEST &rarr; OLDEST)</div>
         <div style="display: flex; gap: 3px;">
-          {% for m in matches_oldest_first %}
+          {% for m in recentMatches %}
             {% if m.win %}
               <span style="width:12px;height:12px;background:#000;"></span>
             {% else %}
