@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T19:16:41Z",
+  "updatedAt": "2026-08-28T19:18:21Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
@@ -31,6 +31,7 @@
       "goldPerMin": 457,
       "visionScore": 22,
       "visionScorePerMin": 0.77,
+      "avgOpponentRank": "Silver II",
       "items": [
         3078,
         3161,
@@ -59,6 +60,7 @@
       "goldPerMin": 486,
       "visionScore": 25,
       "visionScorePerMin": 0.59,
+      "avgOpponentRank": "Silver II",
       "items": [
         3161,
         3078,
@@ -87,6 +89,7 @@
       "goldPerMin": 431,
       "visionScore": 39,
       "visionScorePerMin": 0.97,
+      "avgOpponentRank": "Silver III",
       "items": [
         3152,
         3009,
@@ -115,6 +118,7 @@
       "goldPerMin": 431,
       "visionScore": 18,
       "visionScorePerMin": 0.66,
+      "avgOpponentRank": null,
       "items": [
         3157,
         6653,
@@ -141,6 +145,7 @@
       "goldPerMin": 337,
       "visionScore": 18,
       "visionScorePerMin": 1.05,
+      "avgOpponentRank": null,
       "items": [
         3047,
         6653,
@@ -166,6 +171,7 @@
       "goldPerMin": 375,
       "visionScore": 27,
       "visionScorePerMin": 0.88,
+      "avgOpponentRank": null,
       "items": [
         3111,
         6697,
@@ -193,6 +199,7 @@
       "goldPerMin": 401,
       "visionScore": 16,
       "visionScorePerMin": 0.72,
+      "avgOpponentRank": null,
       "items": [
         3047,
         6653,
@@ -221,6 +228,7 @@
       "goldPerMin": 418,
       "visionScore": 31,
       "visionScorePerMin": 0.92,
+      "avgOpponentRank": null,
       "items": [
         3157,
         6653,
@@ -249,6 +257,7 @@
       "goldPerMin": 395,
       "visionScore": 38,
       "visionScorePerMin": 0.98,
+      "avgOpponentRank": null,
       "items": [
         3157,
         4633,
@@ -277,6 +286,7 @@
       "goldPerMin": 427,
       "visionScore": 38,
       "visionScorePerMin": 0.93,
+      "avgOpponentRank": null,
       "items": [
         3157,
         6653,
@@ -305,6 +315,7 @@
       "goldPerMin": 443,
       "visionScore": 37,
       "visionScorePerMin": 1.02,
+      "avgOpponentRank": null,
       "items": [
         3157,
         6653,
@@ -333,6 +344,7 @@
       "goldPerMin": 452,
       "visionScore": 21,
       "visionScorePerMin": 0.84,
+      "avgOpponentRank": null,
       "items": [
         3157,
         6653,
@@ -359,6 +371,7 @@
       "goldPerMin": 368,
       "visionScore": 30,
       "visionScorePerMin": 0.92,
+      "avgOpponentRank": null,
       "items": [
         6665,
         3084,
@@ -386,6 +399,7 @@
       "goldPerMin": 502,
       "visionScore": 20,
       "visionScorePerMin": 0.9,
+      "avgOpponentRank": null,
       "items": [
         4633,
         6653,
@@ -413,6 +427,7 @@
       "goldPerMin": 418,
       "visionScore": 23,
       "visionScorePerMin": 0.62,
+      "avgOpponentRank": null,
       "items": [
         3157,
         6653,
@@ -441,6 +456,7 @@
       "goldPerMin": 324,
       "visionScore": 27,
       "visionScorePerMin": 1.05,
+      "avgOpponentRank": null,
       "items": [
         6631,
         6672,
@@ -466,6 +482,7 @@
       "goldPerMin": 365,
       "visionScore": 35,
       "visionScorePerMin": 1.09,
+      "avgOpponentRank": null,
       "items": [
         3157,
         3111,
@@ -492,6 +509,7 @@
       "goldPerMin": 381,
       "visionScore": 34,
       "visionScorePerMin": 1.04,
+      "avgOpponentRank": null,
       "items": [
         2421,
         6653,
@@ -520,6 +538,7 @@
       "goldPerMin": 320,
       "visionScore": 28,
       "visionScorePerMin": 0.79,
+      "avgOpponentRank": null,
       "items": [
         4633,
         6653,
@@ -548,6 +567,7 @@
       "goldPerMin": 354,
       "visionScore": 26,
       "visionScorePerMin": 0.68,
+      "avgOpponentRank": null,
       "items": [
         6631,
         6672,
