@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T10:54:34Z",
+  "updatedAt": "2026-08-29T10:57:18Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
@@ -646,7 +646,7 @@
       "rankScore": 1158
     }
   ],
-  "lpChartPoints": "0.0,42.0 187.0,28.0 374.0,14.0 561.0,0.0 748.0,14.7",
+  "lpChartPoints": "0.0,32.0 187.0,21.3 374.0,10.7 561.0,0.0 748.0,11.2",
   "lpChartMin": "Silver I",
   "lpChartMax": "Silver I"
 }
