@@ -247,7 +247,7 @@ def update_lp_history(previous: dict | None, ranked_stats: dict | None, timestam
 
 def build_lp_chart(history: list[dict]) -> dict:
     if not history:
-        return {"points": "", "markers": "", "min": None, "max": None}
+        return {"points": "", "markerPoints": [], "min": None, "max": None}
 
     scores = [h["rankScore"] for h in history]
     lo, hi = min(scores), max(scores)
@@ -266,11 +266,11 @@ def build_lp_chart(history: list[dict]) -> dict:
 
     ys = [round(CHART_HEIGHT - pad - (score - lo) / span * plot_height, 1) for score in scores]
     points = " ".join(f"{x},{y}" for x, y in zip(xs, ys))
-    markers = "".join(f'<circle cx="{x}" cy="{y}" r="4" fill="#000" />' for x, y in zip(xs, ys))
+    marker_points = [{"x": x, "y": y} for x, y in zip(xs, ys)]
 
     return {
         "points": points,
-        "markers": markers,
+        "markerPoints": marker_points,
         "min": score_to_rank_label(lo),
         "max": score_to_rank_label(hi),
     }
@@ -311,7 +311,7 @@ def main() -> None:
         "avgCsPerMin": champion_summary["avgCsPerMin"],
         "lpHistory": lp_history,
         "lpChartPoints": lp_chart["points"],
-        "lpChartMarkers": lp_chart["markers"],
+        "lpChartMarkerPoints": lp_chart["markerPoints"],
         "lpChartMin": lp_chart["min"],
         "lpChartMax": lp_chart["max"],
     }
