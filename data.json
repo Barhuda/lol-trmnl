@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T10:45:35Z",
+  "updatedAt": "2026-08-29T10:46:31Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
@@ -610,38 +610,43 @@
       "leaguePoints": 21,
       "tier": "SILVER",
       "rank": "I",
-      "timestamp": "2026-08-27T16:55:00Z"
+      "timestamp": "2026-08-27T16:55:00Z",
+      "rankScore": 1121
     },
     {
       "totalGames": 74,
       "leaguePoints": 40,
       "tier": "SILVER",
       "rank": "I",
-      "timestamp": "2026-08-28T15:30:40Z"
+      "timestamp": "2026-08-28T15:30:40Z",
+      "rankScore": 1140
     },
     {
       "totalGames": 75,
       "leaguePoints": 59,
       "tier": "SILVER",
       "rank": "I",
-      "timestamp": "2026-08-29T06:30:42Z"
+      "timestamp": "2026-08-29T06:30:42Z",
+      "rankScore": 1159
     },
     {
       "totalGames": 76,
       "leaguePoints": 78,
       "tier": "SILVER",
       "rank": "I",
-      "timestamp": "2026-08-29T09:30:40Z"
+      "timestamp": "2026-08-29T09:30:40Z",
+      "rankScore": 1178
     },
     {
       "totalGames": 77,
       "leaguePoints": 58,
       "tier": "SILVER",
       "rank": "I",
-      "timestamp": "2026-08-29T10:15:31Z"
+      "timestamp": "2026-08-29T10:15:31Z",
+      "rankScore": 1158
     }
   ],
   "lpChartPoints": "0.0,60.0 75.0,40.0 150.0,20.0 225.0,0.0 300.0,21.1",
-  "lpChartMin": 21,
-  "lpChartMax": 78
+  "lpChartMin": "Silver I",
+  "lpChartMax": "Silver I"
 }
