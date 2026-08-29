@@ -6,12 +6,12 @@
 <div class="view view--full">
 <div style="background: #ffffff; color: #000000; width: 800px; height: 480px; padding: 16px 26px; display: flex; flex-direction: column; font-family: monospace; box-sizing: border-box;">
 
-  <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000; padding-bottom: 8px; margin-bottom: 12px;">
+  <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #000; padding-bottom: 6px; margin-bottom: 8px;">
     <span style="font-size: 17px; font-weight: 700; letter-spacing: 0.5px;">{{ riotId | upcase }}</span>
     <span style="font-size: 12px; color: #444;">SOLO/DUO &middot; {{ region }}</span>
   </div>
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 10px;">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 8px;">
 
     <div style="border-right: 2px solid #000; padding-right: 18px; display: flex; flex-direction: column; justify-content: center;">
       {% if soloDuo %}
@@ -49,24 +49,24 @@
     </div>
   </div>
 
-  <div style="border-top: 2px solid #000; padding-top: 8px; margin-bottom: 12px;">
-    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+  <div style="border-top: 2px solid #000; padding-top: 6px; margin-bottom: 8px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px;">
       <span style="font-size: 9px; color: #555;">RANKED TREND</span>
       {% if lpChartMin %}
         <span style="font-size: 9px; color: #444;">{{ lpChartMin }} &rarr; {{ lpChartMax }}</span>
       {% endif %}
     </div>
     {% if lpChartPoints and lpChartPoints != "" %}
-      <svg viewBox="0 0 748 42" width="748" height="42" style="display: block;">
+      <svg viewBox="0 0 748 32" width="748" height="32" style="display: block;">
         <polyline points="{{ lpChartPoints }}" fill="none" stroke="#000" stroke-width="2.5" />
       </svg>
     {% else %}
-      <div style="font-size: 10px; color: #666; height: 42px; display: flex; align-items: center;">Sammle Daten &ndash; Trend erscheint nach dem naechsten gewerteten Spiel.</div>
+      <div style="font-size: 10px; color: #666; height: 32px; display: flex; align-items: center;">Sammle Daten &ndash; Trend erscheint nach dem naechsten gewerteten Spiel.</div>
     {% endif %}
   </div>
 
-  <div style="border-top: 2px solid #000; padding-top: 10px; margin-bottom: 12px;">
-    <div style="font-size: 9px; color: #555; margin-bottom: 8px;">LAST 3 GAMES</div>
+  <div style="border-top: 2px solid #000; padding-top: 8px; margin-bottom: 8px;">
+    <div style="font-size: 9px; color: #555; margin-bottom: 6px;">LAST 3 GAMES</div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
       {% for m in last3 %}
         <div style="border: 2px solid #000; padding: 6px 8px;">
@@ -100,9 +100,9 @@
     </div>
   </div>
 
-  <div style="border-top: 2px solid #000; padding-top: 8px; flex: 1;">
-    <div style="font-size: 9px; color: #555; margin-bottom: 6px;">TOP CHAMPIONS</div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(2, auto); gap: 6px 20px;">
+  <div style="border-top: 2px solid #000; padding-top: 6px; flex: 1;">
+    <div style="font-size: 9px; color: #555; margin-bottom: 4px;">TOP CHAMPIONS</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(2, auto); gap: 4px 20px;">
       {% for c in topChampions %}
         <div style="display: flex; align-items: center; gap: 8px;">
           <img
@@ -125,7 +125,7 @@
     </div>
   </div>
 
-  <div style="text-align: right; font-size: 9px; color: #666; margin-top: 6px;">
+  <div style="text-align: right; font-size: 9px; color: #666; margin-top: 4px;">
     updated {{ updatedAt }} &middot; refresh every 30 min
   </div>
 

@@ -19,7 +19,7 @@ MATCH_COUNT = 20
 QUEUE_SOLO_DUO = 420  # RANKED_SOLO_5x5
 LP_HISTORY_LENGTH = 20
 CHART_WIDTH = 748
-CHART_HEIGHT = 42
+CHART_HEIGHT = 32
 OPPONENT_RANK_MATCH_COUNT = 3  # only the most recent N matches get an avg-opponent-rank lookup
 
 TIER_ORDER = [
