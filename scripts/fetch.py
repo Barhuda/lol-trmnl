@@ -247,33 +247,24 @@ def update_lp_history(previous: dict | None, ranked_stats: dict | None, timestam
 
 def build_lp_chart(history: list[dict]) -> dict:
     if not history:
-        return {"points": "", "markerPoints": [], "min": None, "max": None}
+        return {"points": "", "min": None, "max": None}
 
     scores = [h["rankScore"] for h in history]
     lo, hi = min(scores), max(scores)
     span = hi - lo or 1
 
-    # inset so marker circles (r=4) never get clipped at the chart edges
-    pad = 4
-    plot_width = CHART_WIDTH - 2 * pad
-    plot_height = CHART_HEIGHT - 2 * pad
-
     if len(history) == 1:
         xs = [CHART_WIDTH / 2]
     else:
-        step = plot_width / (len(history) - 1)
-        xs = [round(pad + i * step, 1) for i in range(len(history))]
+        step = CHART_WIDTH / (len(history) - 1)
+        xs = [round(i * step, 1) for i in range(len(history))]
 
-    ys = [round(CHART_HEIGHT - pad - (score - lo) / span * plot_height, 1) for score in scores]
-    points = " ".join(f"{x},{y}" for x, y in zip(xs, ys))
-    marker_points = [{"x": x, "y": y} for x, y in zip(xs, ys)]
+    points = " ".join(
+        f"{x},{round(CHART_HEIGHT - (score - lo) / span * CHART_HEIGHT, 1)}"
+        for x, score in zip(xs, scores)
+    )
 
-    return {
-        "points": points,
-        "markerPoints": marker_points,
-        "min": score_to_rank_label(lo),
-        "max": score_to_rank_label(hi),
-    }
+    return {"points": points, "min": score_to_rank_label(lo), "max": score_to_rank_label(hi)}
 
 
 def main() -> None:
