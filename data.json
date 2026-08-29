@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T10:46:31Z",
+  "updatedAt": "2026-08-29T10:48:28Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
@@ -646,7 +646,8 @@
       "rankScore": 1158
     }
   ],
-  "lpChartPoints": "0.0,60.0 75.0,40.0 150.0,20.0 225.0,0.0 300.0,21.1",
+  "lpChartPoints": "4.0,38.0 189.0,26.7 374.0,15.3 559.0,4.0 744.0,15.9",
+  "lpChartMarkers": "<circle cx=\"4.0\" cy=\"38.0\" r=\"4\" fill=\"#000\" /><circle cx=\"189.0\" cy=\"26.7\" r=\"4\" fill=\"#000\" /><circle cx=\"374.0\" cy=\"15.3\" r=\"4\" fill=\"#000\" /><circle cx=\"559.0\" cy=\"4.0\" r=\"4\" fill=\"#000\" /><circle cx=\"744.0\" cy=\"15.9\" r=\"4\" fill=\"#000\" />",
   "lpChartMin": "Silver I",
   "lpChartMax": "Silver I"
 }
