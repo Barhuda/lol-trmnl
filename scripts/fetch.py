@@ -216,6 +216,12 @@ def load_previous_data() -> dict | None:
 
 def update_lp_history(previous: dict | None, ranked_stats: dict | None, timestamp: str) -> list[dict]:
     history = list(previous.get("lpHistory", [])) if previous else []
+
+    # backfill entries written before rankScore existed
+    for entry in history:
+        if "rankScore" not in entry:
+            entry["rankScore"] = rank_score(entry["tier"], entry["rank"], entry["leaguePoints"])
+
     if not ranked_stats:
         return history
 
@@ -229,6 +235,9 @@ def update_lp_history(previous: dict | None, ranked_stats: dict | None, timestam
                 "leaguePoints": ranked_stats["leaguePoints"],
                 "tier": ranked_stats["tier"],
                 "rank": ranked_stats["rank"],
+                # continuous tier+division+LP scale, so promotions/demotions show as a
+                # rise/drop instead of the raw LP reset (e.g. Silver I 90 -> Gold IV 0)
+                "rankScore": rank_score(ranked_stats["tier"], ranked_stats["rank"], ranked_stats["leaguePoints"]),
                 "timestamp": timestamp,
             }
         )
@@ -240,8 +249,8 @@ def build_lp_chart(history: list[dict]) -> dict:
     if not history:
         return {"points": "", "min": None, "max": None}
 
-    lp_values = [h["leaguePoints"] for h in history]
-    lo, hi = min(lp_values), max(lp_values)
+    scores = [h["rankScore"] for h in history]
+    lo, hi = min(scores), max(scores)
     span = hi - lo or 1
 
     if len(history) == 1:
@@ -251,11 +260,11 @@ def build_lp_chart(history: list[dict]) -> dict:
         xs = [round(i * step, 1) for i in range(len(history))]
 
     points = " ".join(
-        f"{x},{round(CHART_HEIGHT - (lp - lo) / span * CHART_HEIGHT, 1)}"
-        for x, lp in zip(xs, lp_values)
+        f"{x},{round(CHART_HEIGHT - (score - lo) / span * CHART_HEIGHT, 1)}"
+        for x, score in zip(xs, scores)
     )
 
-    return {"points": points, "min": lo, "max": hi}
+    return {"points": points, "min": score_to_rank_label(lo), "max": score_to_rank_label(hi)}
 
 
 def main() -> None:
