@@ -302,7 +302,6 @@ def main() -> None:
         "avgCsPerMin": champion_summary["avgCsPerMin"],
         "lpHistory": lp_history,
         "lpChartPoints": lp_chart["points"],
-        "lpChartMarkerPoints": lp_chart["markerPoints"],
         "lpChartMin": lp_chart["min"],
         "lpChartMax": lp_chart["max"],
     }
