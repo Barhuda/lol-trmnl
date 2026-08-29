@@ -254,10 +254,13 @@ def build_lp_chart(history: list[dict]) -> dict:
     span = hi - lo or 1
 
     if len(history) == 1:
-        xs = [CHART_WIDTH / 2]
-    else:
-        step = CHART_WIDTH / (len(history) - 1)
-        xs = [round(i * step, 1) for i in range(len(history))]
+        # a single point can't form a line - draw it flat across the full width
+        # instead of a dot stranded in the middle
+        y = round(CHART_HEIGHT - (scores[0] - lo) / span * CHART_HEIGHT, 1)
+        return {"points": f"0,{y} {CHART_WIDTH},{y}", "min": score_to_rank_label(lo), "max": score_to_rank_label(hi)}
+
+    step = CHART_WIDTH / (len(history) - 1)
+    xs = [round(i * step, 1) for i in range(len(history))]
 
     points = " ".join(
         f"{x},{round(CHART_HEIGHT - (score - lo) / span * CHART_HEIGHT, 1)}"
