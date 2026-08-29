@@ -57,8 +57,9 @@
       {% endif %}
     </div>
     {% if lpChartPoints and lpChartPoints != "" %}
-      <svg viewBox="0 0 300 60" width="748" height="42" preserveAspectRatio="none" style="display: block;">
+      <svg viewBox="0 0 748 42" width="748" height="42" style="display: block;">
         <polyline points="{{ lpChartPoints }}" fill="none" stroke="#000" stroke-width="2.5" />
+        {{ lpChartMarkers }}
       </svg>
     {% else %}
       <div style="font-size: 10px; color: #666; height: 42px; display: flex; align-items: center;">Sammle Daten &ndash; Trend erscheint nach dem naechsten gewerteten Spiel.</div>

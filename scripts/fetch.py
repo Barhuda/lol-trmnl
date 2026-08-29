@@ -18,8 +18,8 @@ REGION = "europe"
 MATCH_COUNT = 20
 QUEUE_SOLO_DUO = 420  # RANKED_SOLO_5x5
 LP_HISTORY_LENGTH = 20
-CHART_WIDTH = 300
-CHART_HEIGHT = 60
+CHART_WIDTH = 748
+CHART_HEIGHT = 42
 OPPONENT_RANK_MATCH_COUNT = 3  # only the most recent N matches get an avg-opponent-rank lookup
 
 TIER_ORDER = [
@@ -247,24 +247,33 @@ def update_lp_history(previous: dict | None, ranked_stats: dict | None, timestam
 
 def build_lp_chart(history: list[dict]) -> dict:
     if not history:
-        return {"points": "", "min": None, "max": None}
+        return {"points": "", "markers": "", "min": None, "max": None}
 
     scores = [h["rankScore"] for h in history]
     lo, hi = min(scores), max(scores)
     span = hi - lo or 1
 
+    # inset so marker circles (r=4) never get clipped at the chart edges
+    pad = 4
+    plot_width = CHART_WIDTH - 2 * pad
+    plot_height = CHART_HEIGHT - 2 * pad
+
     if len(history) == 1:
         xs = [CHART_WIDTH / 2]
     else:
-        step = CHART_WIDTH / (len(history) - 1)
-        xs = [round(i * step, 1) for i in range(len(history))]
+        step = plot_width / (len(history) - 1)
+        xs = [round(pad + i * step, 1) for i in range(len(history))]
 
-    points = " ".join(
-        f"{x},{round(CHART_HEIGHT - (score - lo) / span * CHART_HEIGHT, 1)}"
-        for x, score in zip(xs, scores)
-    )
+    ys = [round(CHART_HEIGHT - pad - (score - lo) / span * plot_height, 1) for score in scores]
+    points = " ".join(f"{x},{y}" for x, y in zip(xs, ys))
+    markers = "".join(f'<circle cx="{x}" cy="{y}" r="4" fill="#000" />' for x, y in zip(xs, ys))
 
-    return {"points": points, "min": score_to_rank_label(lo), "max": score_to_rank_label(hi)}
+    return {
+        "points": points,
+        "markers": markers,
+        "min": score_to_rank_label(lo),
+        "max": score_to_rank_label(hi),
+    }
 
 
 def main() -> None:
@@ -302,6 +311,7 @@ def main() -> None:
         "avgCsPerMin": champion_summary["avgCsPerMin"],
         "lpHistory": lp_history,
         "lpChartPoints": lp_chart["points"],
+        "lpChartMarkers": lp_chart["markers"],
         "lpChartMin": lp_chart["min"],
         "lpChartMax": lp_chart["max"],
     }
