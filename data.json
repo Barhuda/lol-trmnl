@@ -1,17 +1,45 @@
 {
-  "updatedAt": "2026-08-29T06:00:48Z",
+  "updatedAt": "2026-08-29T06:30:42Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
   "soloDuo": {
     "tier": "SILVER",
     "rank": "I",
-    "leaguePoints": 40,
-    "wins": 27,
+    "leaguePoints": 59,
+    "wins": 28,
     "losses": 47,
-    "winrate": 36.5
+    "winrate": 37.3
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7965760411",
+      "champion": "Lillia",
+      "kills": 5,
+      "deaths": 2,
+      "assists": 18,
+      "kda": 11.5,
+      "csPerMin": 7.4,
+      "win": true,
+      "gameCreation": 1787981907081,
+      "durationMin": 30,
+      "position": "JUNGLE",
+      "damageDealt": 27317,
+      "damagePerMin": 911,
+      "damageTaken": 37188,
+      "goldEarned": 14237,
+      "goldPerMin": 475,
+      "visionScore": 36,
+      "visionScorePerMin": 1.2,
+      "avgOpponentRank": "Silver II",
+      "items": [
+        3157,
+        6653,
+        1058,
+        4633,
+        3020
+      ]
+    },
     {
       "matchId": "EUW1_7964957245",
       "champion": "Shyvana",
@@ -89,7 +117,7 @@
       "goldPerMin": 431,
       "visionScore": 39,
       "visionScorePerMin": 0.97,
-      "avgOpponentRank": "Silver III",
+      "avgOpponentRank": null,
       "items": [
         3152,
         3009,
@@ -547,52 +575,17 @@
         1052,
         1029
       ]
-    },
-    {
-      "matchId": "EUW1_7958879204",
-      "champion": "Belveth",
-      "kills": 3,
-      "deaths": 13,
-      "assists": 13,
-      "kda": 1.23,
-      "csPerMin": 4.99,
-      "win": true,
-      "gameCreation": 1787429954938,
-      "durationMin": 38,
-      "position": "JUNGLE",
-      "damageDealt": 13968,
-      "damagePerMin": 365,
-      "damageTaken": 52820,
-      "goldEarned": 13542,
-      "goldPerMin": 354,
-      "visionScore": 26,
-      "visionScorePerMin": 0.68,
-      "avgOpponentRank": null,
-      "items": [
-        6631,
-        6672,
-        6333,
-        1043,
-        1043,
-        3111
-      ]
     }
   ],
   "topChampions": [
     {
       "champion": "Lillia",
-      "games": 13,
-      "wins": 3,
-      "winrate": 23.1
+      "games": 14,
+      "wins": 4,
+      "winrate": 28.6
     },
     {
       "champion": "Shyvana",
-      "games": 2,
-      "wins": 1,
-      "winrate": 50.0
-    },
-    {
-      "champion": "Belveth",
       "games": 2,
       "wins": 1,
       "winrate": 50.0
@@ -602,10 +595,16 @@
       "games": 1,
       "wins": 1,
       "winrate": 100.0
+    },
+    {
+      "champion": "Graves",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0
     }
   ],
-  "avgKda": 2.32,
-  "avgCsPerMin": 6.41,
+  "avgKda": 2.84,
+  "avgCsPerMin": 6.53,
   "lpHistory": [
     {
       "totalGames": 73,
@@ -620,9 +619,16 @@
       "tier": "SILVER",
       "rank": "I",
       "timestamp": "2026-08-28T15:30:40Z"
+    },
+    {
+      "totalGames": 75,
+      "leaguePoints": 59,
+      "tier": "SILVER",
+      "rank": "I",
+      "timestamp": "2026-08-29T06:30:42Z"
     }
   ],
-  "lpChartPoints": "0.0,60.0 300.0,0.0",
+  "lpChartPoints": "0.0,60.0 150.0,30.0 300.0,0.0",
   "lpChartMin": 21,
-  "lpChartMax": 40
+  "lpChartMax": 59
 }
