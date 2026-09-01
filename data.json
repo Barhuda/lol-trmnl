@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T17:30:55Z",
+  "updatedAt": "2026-09-01T17:45:41Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
@@ -8,10 +8,39 @@
     "rank": "IV",
     "leaguePoints": 14,
     "wins": 36,
-    "losses": 52,
-    "winrate": 40.9
+    "losses": 53,
+    "winrate": 40.4
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7969816765",
+      "champion": "Chogath",
+      "kills": 8,
+      "deaths": 6,
+      "assists": 6,
+      "kda": 2.33,
+      "csPerMin": 6.27,
+      "win": false,
+      "gameCreation": 1788282329217,
+      "durationMin": 34,
+      "position": "JUNGLE",
+      "damageDealt": 29639,
+      "damagePerMin": 884,
+      "damageTaken": 73937,
+      "goldEarned": 14600,
+      "goldPerMin": 436,
+      "visionScore": 42,
+      "visionScorePerMin": 1.25,
+      "avgOpponentRank": "Gold III",
+      "items": [
+        3084,
+        3047,
+        2502,
+        3742,
+        3075,
+        3211
+      ]
+    },
     {
       "matchId": "EUW1_7969758750",
       "champion": "Chogath",
@@ -89,7 +118,7 @@
       "goldPerMin": 568,
       "visionScore": 26,
       "visionScorePerMin": 0.85,
-      "avgOpponentRank": "Silver I",
+      "avgOpponentRank": null,
       "items": [
         3161,
         3078,
@@ -547,42 +576,14 @@
         6653,
         1052
       ]
-    },
-    {
-      "matchId": "EUW1_7961974234",
-      "champion": "Graves",
-      "kills": 2,
-      "deaths": 10,
-      "assists": 14,
-      "kda": 1.6,
-      "csPerMin": 6.35,
-      "win": false,
-      "gameCreation": 1787687122134,
-      "durationMin": 31,
-      "position": "JUNGLE",
-      "damageDealt": 14014,
-      "damagePerMin": 458,
-      "damageTaken": 38115,
-      "goldEarned": 11470,
-      "goldPerMin": 375,
-      "visionScore": 27,
-      "visionScorePerMin": 0.88,
-      "avgOpponentRank": null,
-      "items": [
-        3111,
-        6697,
-        6610,
-        3071,
-        1036
-      ]
     }
   ],
   "topChampions": [
     {
       "champion": "Chogath",
-      "games": 9,
+      "games": 10,
       "wins": 6,
-      "winrate": 66.7
+      "winrate": 60.0
     },
     {
       "champion": "Shyvana",
@@ -595,15 +596,9 @@
       "games": 5,
       "wins": 3,
       "winrate": 60.0
-    },
-    {
-      "champion": "Graves",
-      "games": 1,
-      "wins": 0,
-      "winrate": 0.0
     }
   ],
-  "avgKda": 5.28,
+  "avgKda": 5.31,
   "avgCsPerMin": 6.7,
   "lpHistory": [
     {
@@ -733,9 +728,17 @@
       "rank": "IV",
       "rankScore": 1214,
       "timestamp": "2026-09-01T17:12:25Z"
+    },
+    {
+      "totalGames": 89,
+      "leaguePoints": 14,
+      "tier": "GOLD",
+      "rank": "IV",
+      "rankScore": 1214,
+      "timestamp": "2026-09-01T17:45:41Z"
     }
   ],
-  "lpChartPoints": "0.0,32.0 49.9,26.6 99.7,21.2 149.6,15.9 199.5,21.5 249.3,27.5 299.2,22.1 349.1,28.0 398.9,22.7 448.8,17.0 498.7,22.7 548.5,17.0 598.4,11.3 648.3,5.7 698.1,0.0 748.0,5.7",
+  "lpChartPoints": "0.0,32.0 46.8,26.6 93.5,21.2 140.2,15.9 187.0,21.5 233.8,27.5 280.5,22.1 327.2,28.0 374.0,22.7 420.8,17.0 467.5,22.7 514.2,17.0 561.0,11.3 607.8,5.7 654.5,0.0 701.2,5.7 748.0,5.7",
   "lpChartMin": "Silver I",
   "lpChartMax": "Gold IV"
 }
