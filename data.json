@@ -1,17 +1,45 @@
 {
-  "updatedAt": "2026-09-03T18:15:41Z",
+  "updatedAt": "2026-09-03T18:30:57Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
   "soloDuo": {
-    "tier": "GOLD",
-    "rank": "IV",
-    "leaguePoints": 0,
+    "tier": "SILVER",
+    "rank": "I",
+    "leaguePoints": 50,
     "wins": 38,
-    "losses": 58,
-    "winrate": 39.6
+    "losses": 59,
+    "winrate": 39.2
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7971993331",
+      "champion": "Lillia",
+      "kills": 6,
+      "deaths": 12,
+      "assists": 12,
+      "kda": 1.5,
+      "csPerMin": 5.96,
+      "win": false,
+      "gameCreation": 1788457359327,
+      "durationMin": 39,
+      "position": "JUNGLE",
+      "damageDealt": 36447,
+      "damagePerMin": 936,
+      "damageTaken": 56769,
+      "goldEarned": 14805,
+      "goldPerMin": 380,
+      "visionScore": 45,
+      "visionScorePerMin": 1.16,
+      "avgOpponentRank": "Silver I",
+      "items": [
+        3157,
+        6653,
+        3089,
+        4633,
+        3047
+      ]
+    },
     {
       "matchId": "EUW1_7971976143",
       "champion": "Lillia",
@@ -86,7 +114,7 @@
       "goldPerMin": 355,
       "visionScore": 24,
       "visionScorePerMin": 0.89,
-      "avgOpponentRank": "Silver II",
+      "avgOpponentRank": null,
       "items": [
         3020,
         6653,
@@ -544,35 +572,6 @@
         1057,
         3009
       ]
-    },
-    {
-      "matchId": "EUW1_7965854933",
-      "champion": "Lillia",
-      "kills": 7,
-      "deaths": 10,
-      "assists": 14,
-      "kda": 2.1,
-      "csPerMin": 5.92,
-      "win": false,
-      "gameCreation": 1787995596183,
-      "durationMin": 40,
-      "position": "JUNGLE",
-      "damageDealt": 36961,
-      "damagePerMin": 935,
-      "damageTaken": 59559,
-      "goldEarned": 17258,
-      "goldPerMin": 437,
-      "visionScore": 33,
-      "visionScorePerMin": 0.84,
-      "avgOpponentRank": null,
-      "items": [
-        3157,
-        6653,
-        4633,
-        3116,
-        3020,
-        1058
-      ]
     }
   ],
   "topChampions": [
@@ -595,17 +594,9 @@
       "winrate": 75.0
     }
   ],
-  "avgKda": 4.57,
+  "avgKda": 4.54,
   "avgCsPerMin": 6.63,
   "lpHistory": [
-    {
-      "totalGames": 76,
-      "leaguePoints": 78,
-      "tier": "SILVER",
-      "rank": "I",
-      "timestamp": "2026-08-29T09:30:40Z",
-      "rankScore": 1178
-    },
     {
       "totalGames": 77,
       "leaguePoints": 58,
@@ -757,9 +748,17 @@
       "rank": "IV",
       "rankScore": 1200,
       "timestamp": "2026-09-03T17:30:57Z"
+    },
+    {
+      "totalGames": 97,
+      "leaguePoints": 50,
+      "tier": "SILVER",
+      "rank": "I",
+      "rankScore": 1150,
+      "timestamp": "2026-09-03T18:30:57Z"
     }
   ],
-  "lpChartPoints": "0.0,18.6 39.4,24.9 78.7,31.4 118.1,25.5 157.5,32.0 196.8,26.1 236.2,19.9 275.6,26.1 314.9,19.9 354.3,13.7 393.7,7.5 433.1,1.2 472.4,7.5 511.8,7.5 551.2,11.8 590.5,5.9 629.9,0.0 669.3,6.5 708.6,11.8 748.0,11.8",
+  "lpChartPoints": "0.0,24.9 39.4,31.4 78.7,25.5 118.1,32.0 157.5,26.1 196.8,19.9 236.2,26.1 275.6,19.9 314.9,13.7 354.3,7.5 393.7,1.2 433.1,7.5 472.4,7.5 511.8,11.8 551.2,5.9 590.5,0.0 629.9,6.5 669.3,11.8 708.6,11.8 748.0,27.3",
   "lpChartMin": "Silver I",
   "lpChartMax": "Gold IV"
 }
