@@ -1,17 +1,46 @@
 {
-  "updatedAt": "2026-09-03T19:01:00Z",
+  "updatedAt": "2026-09-03T19:15:36Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
   "soloDuo": {
     "tier": "SILVER",
     "rank": "I",
-    "leaguePoints": 50,
-    "wins": 38,
+    "leaguePoints": 68,
+    "wins": 39,
     "losses": 59,
-    "winrate": 39.2
+    "winrate": 39.8
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7972061782",
+      "champion": "Chogath",
+      "kills": 17,
+      "deaths": 4,
+      "assists": 8,
+      "kda": 6.25,
+      "csPerMin": 6.79,
+      "win": true,
+      "gameCreation": 1788460015431,
+      "durationMin": 39,
+      "position": "JUNGLE",
+      "damageDealt": 40419,
+      "damagePerMin": 1047,
+      "damageTaken": 75236,
+      "goldEarned": 18936,
+      "goldPerMin": 491,
+      "visionScore": 46,
+      "visionScorePerMin": 1.19,
+      "avgOpponentRank": "Silver I",
+      "items": [
+        2502,
+        3084,
+        3009,
+        3742,
+        3083,
+        3075
+      ]
+    },
     {
       "matchId": "EUW1_7971993331",
       "champion": "Lillia",
@@ -85,7 +114,7 @@
       "goldPerMin": 367,
       "visionScore": 16,
       "visionScorePerMin": 0.67,
-      "avgOpponentRank": "Silver I",
+      "avgOpponentRank": null,
       "items": [
         4633,
         6653,
@@ -544,42 +573,14 @@
         2021,
         1028
       ]
-    },
-    {
-      "matchId": "EUW1_7967090341",
-      "champion": "Chogath",
-      "kills": 5,
-      "deaths": 6,
-      "assists": 1,
-      "kda": 1.0,
-      "csPerMin": 5.91,
-      "win": false,
-      "gameCreation": 1788086125746,
-      "durationMin": 25,
-      "position": "JUNGLE",
-      "damageDealt": 10877,
-      "damagePerMin": 437,
-      "damageTaken": 35201,
-      "goldEarned": 9006,
-      "goldPerMin": 362,
-      "visionScore": 29,
-      "visionScorePerMin": 1.17,
-      "avgOpponentRank": null,
-      "items": [
-        2502,
-        3084,
-        1033,
-        1057,
-        3009
-      ]
     }
   ],
   "topChampions": [
     {
       "champion": "Chogath",
       "games": 10,
-      "wins": 5,
-      "winrate": 50.0
+      "wins": 6,
+      "winrate": 60.0
     },
     {
       "champion": "Lillia",
@@ -594,17 +595,9 @@
       "winrate": 75.0
     }
   ],
-  "avgKda": 4.54,
-  "avgCsPerMin": 6.63,
+  "avgKda": 4.8,
+  "avgCsPerMin": 6.67,
   "lpHistory": [
-    {
-      "totalGames": 77,
-      "leaguePoints": 58,
-      "tier": "SILVER",
-      "rank": "I",
-      "timestamp": "2026-08-29T10:15:31Z",
-      "rankScore": 1158
-    },
     {
       "totalGames": 78,
       "leaguePoints": 37,
@@ -756,9 +749,17 @@
       "rank": "I",
       "rankScore": 1150,
       "timestamp": "2026-09-03T18:30:57Z"
+    },
+    {
+      "totalGames": 98,
+      "leaguePoints": 68,
+      "tier": "SILVER",
+      "rank": "I",
+      "rankScore": 1168,
+      "timestamp": "2026-09-03T19:15:36Z"
     }
   ],
-  "lpChartPoints": "0.0,24.9 39.4,31.4 78.7,25.5 118.1,32.0 157.5,26.1 196.8,19.9 236.2,26.1 275.6,19.9 314.9,13.7 354.3,7.5 393.7,1.2 433.1,7.5 472.4,7.5 511.8,11.8 551.2,5.9 590.5,0.0 629.9,6.5 669.3,11.8 708.6,11.8 748.0,27.3",
+  "lpChartPoints": "0.0,31.4 39.4,25.5 78.7,32.0 118.1,26.1 157.5,19.9 196.8,26.1 236.2,19.9 275.6,13.7 314.9,7.5 354.3,1.2 393.7,7.5 433.1,7.5 472.4,11.8 511.8,5.9 551.2,0.0 590.5,6.5 629.9,11.8 669.3,11.8 708.6,27.3 748.0,21.7",
   "lpChartMin": "Silver I",
   "lpChartMax": "Gold IV"
 }
