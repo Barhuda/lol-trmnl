@@ -1,17 +1,45 @@
 {
-  "updatedAt": "2026-09-06T07:15:37Z",
+  "updatedAt": "2026-09-06T07:30:48Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.17.1",
   "soloDuo": {
     "tier": "SILVER",
     "rank": "I",
-    "leaguePoints": 75,
-    "wins": 43,
+    "leaguePoints": 94,
+    "wins": 44,
     "losses": 62,
-    "winrate": 41.0
+    "winrate": 41.5
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7974742405",
+      "champion": "JarvanIV",
+      "kills": 3,
+      "deaths": 6,
+      "assists": 12,
+      "kda": 2.5,
+      "csPerMin": 6.78,
+      "win": true,
+      "gameCreation": 1788677915402,
+      "durationMin": 28,
+      "position": "JUNGLE",
+      "damageDealt": 16379,
+      "damagePerMin": 575,
+      "damageTaken": 23673,
+      "goldEarned": 11974,
+      "goldPerMin": 421,
+      "visionScore": 29,
+      "visionScorePerMin": 1.02,
+      "avgOpponentRank": "Silver II",
+      "items": [
+        6698,
+        3111,
+        6696,
+        3156,
+        1029
+      ]
+    },
     {
       "matchId": "EUW1_7974299765",
       "champion": "JarvanIV",
@@ -89,7 +117,7 @@
       "goldPerMin": 457,
       "visionScore": 26,
       "visionScorePerMin": 0.88,
-      "avgOpponentRank": "Silver II",
+      "avgOpponentRank": null,
       "items": [
         2502,
         3084,
@@ -548,35 +576,6 @@
         1057,
         1028
       ]
-    },
-    {
-      "matchId": "EUW1_7968756730",
-      "champion": "Shyvana",
-      "kills": 14,
-      "deaths": 2,
-      "assists": 12,
-      "kda": 13.0,
-      "csPerMin": 7.47,
-      "win": true,
-      "gameCreation": 1788197098260,
-      "durationMin": 31,
-      "position": "JUNGLE",
-      "damageDealt": 26364,
-      "damagePerMin": 863,
-      "damageTaken": 40064,
-      "goldEarned": 17338,
-      "goldPerMin": 568,
-      "visionScore": 26,
-      "visionScorePerMin": 0.85,
-      "avgOpponentRank": null,
-      "items": [
-        3161,
-        3078,
-        6333,
-        3008,
-        3053,
-        1029
-      ]
     }
   ],
   "topChampions": [
@@ -594,28 +593,20 @@
     },
     {
       "champion": "JarvanIV",
-      "games": 2,
-      "wins": 2,
+      "games": 3,
+      "wins": 3,
       "winrate": 100.0
     },
     {
-      "champion": "Shyvana",
-      "games": 2,
-      "wins": 2,
-      "winrate": 100.0
+      "champion": "DrMundo",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0
     }
   ],
-  "avgKda": 3.5,
-  "avgCsPerMin": 6.48,
+  "avgKda": 2.98,
+  "avgCsPerMin": 6.45,
   "lpHistory": [
-    {
-      "totalGames": 85,
-      "leaguePoints": 94,
-      "tier": "SILVER",
-      "rank": "I",
-      "rankScore": 1194,
-      "timestamp": "2026-08-31T15:45:40Z"
-    },
     {
       "totalGames": 86,
       "leaguePoints": 14,
@@ -767,9 +758,17 @@
       "rank": "I",
       "rankScore": 1175,
       "timestamp": "2026-09-05T20:01:08Z"
+    },
+    {
+      "totalGames": 106,
+      "leaguePoints": 94,
+      "tier": "SILVER",
+      "rank": "I",
+      "rankScore": 1194,
+      "timestamp": "2026-09-06T07:30:48Z"
     }
   ],
-  "lpChartPoints": "0.0,11.9 39.4,6.5 78.7,1.1 118.1,6.5 157.5,6.5 196.8,10.3 236.2,5.2 275.6,0.0 314.9,5.7 354.3,10.3 393.7,10.3 433.1,23.9 472.4,19.0 511.8,24.9 551.2,30.9 590.5,26.0 629.9,32.0 669.3,27.1 708.6,22.2 748.0,17.1",
+  "lpChartPoints": "0.0,6.5 39.4,1.1 78.7,6.5 118.1,6.5 157.5,10.3 196.8,5.2 236.2,0.0 275.6,5.7 314.9,10.3 354.3,10.3 393.7,23.9 433.1,19.0 472.4,24.9 511.8,30.9 551.2,26.0 590.5,32.0 629.9,27.1 669.3,22.2 708.6,17.1 748.0,11.9",
   "lpChartMin": "Silver I",
   "lpChartMax": "Gold IV"
 }
