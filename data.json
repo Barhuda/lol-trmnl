@@ -1,17 +1,45 @@
 {
-  "updatedAt": "2026-09-11T17:15:45Z",
+  "updatedAt": "2026-09-11T17:31:00Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.18.1",
   "soloDuo": {
     "tier": "GOLD",
     "rank": "IV",
-    "leaguePoints": 57,
-    "wins": 52,
+    "leaguePoints": 76,
+    "wins": 53,
     "losses": 68,
-    "winrate": 43.3
+    "winrate": 43.8
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7980430216",
+      "champion": "Sejuani",
+      "kills": 3,
+      "deaths": 1,
+      "assists": 16,
+      "kda": 19.0,
+      "csPerMin": 6.45,
+      "win": true,
+      "gameCreation": 1789145570646,
+      "durationMin": 28,
+      "position": "JUNGLE",
+      "damageDealt": 16408,
+      "damagePerMin": 591,
+      "damageTaken": 23741,
+      "goldEarned": 11338,
+      "goldPerMin": 409,
+      "visionScore": 42,
+      "visionScorePerMin": 1.51,
+      "avgOpponentRank": "Gold IV",
+      "items": [
+        3084,
+        3047,
+        2502,
+        3082,
+        1028
+      ]
+    },
     {
       "matchId": "EUW1_7980341387",
       "champion": "Sejuani",
@@ -86,7 +114,7 @@
       "goldPerMin": 428,
       "visionScore": 23,
       "visionScorePerMin": 0.84,
-      "avgOpponentRank": "Silver II",
+      "avgOpponentRank": null,
       "items": [
         3084,
         3009,
@@ -546,42 +574,14 @@
         1006,
         1011
       ]
-    },
-    {
-      "matchId": "EUW1_7972238981",
-      "champion": "Chogath",
-      "kills": 2,
-      "deaths": 4,
-      "assists": 8,
-      "kda": 2.5,
-      "csPerMin": 6.14,
-      "win": true,
-      "gameCreation": 1788467076512,
-      "durationMin": 25,
-      "position": "JUNGLE",
-      "damageDealt": 12046,
-      "damagePerMin": 480,
-      "damageTaken": 28347,
-      "goldEarned": 9032,
-      "goldPerMin": 360,
-      "visionScore": 29,
-      "visionScorePerMin": 1.16,
-      "avgOpponentRank": null,
-      "items": [
-        3009,
-        3084,
-        2504,
-        1031,
-        1028
-      ]
     }
   ],
   "topChampions": [
     {
       "champion": "Chogath",
-      "games": 8,
-      "wins": 7,
-      "winrate": 87.5
+      "games": 7,
+      "wins": 6,
+      "winrate": 85.7
     },
     {
       "champion": "JarvanIV",
@@ -591,8 +591,8 @@
     },
     {
       "champion": "Sejuani",
-      "games": 2,
-      "wins": 2,
+      "games": 3,
+      "wins": 3,
       "winrate": 100.0
     },
     {
@@ -602,17 +602,9 @@
       "winrate": 50.0
     }
   ],
-  "avgKda": 4.19,
-  "avgCsPerMin": 6.17,
+  "avgKda": 5.01,
+  "avgCsPerMin": 6.19,
   "lpHistory": [
-    {
-      "totalGames": 101,
-      "leaguePoints": 42,
-      "tier": "SILVER",
-      "rank": "I",
-      "rankScore": 1142,
-      "timestamp": "2026-09-03T21:01:03Z"
-    },
     {
       "totalGames": 102,
       "leaguePoints": 20,
@@ -764,9 +756,17 @@
       "rank": "IV",
       "rankScore": 1257,
       "timestamp": "2026-09-11T16:15:45Z"
+    },
+    {
+      "totalGames": 121,
+      "leaguePoints": 76,
+      "tier": "GOLD",
+      "rank": "IV",
+      "rankScore": 1276,
+      "timestamp": "2026-09-11T17:31:00Z"
     }
   ],
-  "lpChartPoints": "0.0,26.9 39.4,32.0 78.7,27.8 118.1,23.6 157.5,19.2 196.8,14.7 236.2,19.6 275.6,15.2 314.9,20.1 354.3,15.6 393.7,20.6 433.1,16.1 472.4,11.4 511.8,6.8 551.2,11.4 590.5,13.3 629.9,13.3 669.3,8.9 708.6,4.4 748.0,0.0",
+  "lpChartPoints": "0.0,32.0 39.4,28.3 78.7,24.6 118.1,20.7 157.5,16.8 196.8,21.1 236.2,17.2 275.6,21.5 314.9,17.6 354.3,21.9 393.7,18.1 433.1,13.9 472.4,9.8 511.8,13.9 551.2,15.6 590.5,15.6 629.9,11.7 669.3,7.8 708.6,3.9 748.0,0.0",
   "lpChartMin": "Silver I",
   "lpChartMax": "Gold IV"
 }
