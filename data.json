@@ -1,17 +1,46 @@
 {
-  "updatedAt": "2026-09-11T18:01:13Z",
+  "updatedAt": "2026-09-11T18:15:46Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.18.1",
   "soloDuo": {
     "tier": "GOLD",
     "rank": "IV",
-    "leaguePoints": 76,
-    "wins": 53,
+    "leaguePoints": 95,
+    "wins": 54,
     "losses": 68,
-    "winrate": 43.8
+    "winrate": 44.3
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7980496570",
+      "champion": "Sejuani",
+      "kills": 8,
+      "deaths": 4,
+      "assists": 23,
+      "kda": 7.75,
+      "csPerMin": 6.06,
+      "win": true,
+      "gameCreation": 1789148199238,
+      "durationMin": 32,
+      "position": "JUNGLE",
+      "damageDealt": 22082,
+      "damagePerMin": 682,
+      "damageTaken": 36948,
+      "goldEarned": 14391,
+      "goldPerMin": 445,
+      "visionScore": 31,
+      "visionScorePerMin": 0.96,
+      "avgOpponentRank": "Gold IV",
+      "items": [
+        2502,
+        3084,
+        6665,
+        3047,
+        6660,
+        1031
+      ]
+    },
     {
       "matchId": "EUW1_7980430216",
       "champion": "Sejuani",
@@ -59,7 +88,7 @@
       "goldPerMin": 378,
       "visionScore": 30,
       "visionScorePerMin": 0.82,
-      "avgOpponentRank": "Silver I",
+      "avgOpponentRank": "Gold IV",
       "items": [
         3111,
         3084,
@@ -88,7 +117,7 @@
       "goldPerMin": 443,
       "visionScore": 16,
       "visionScorePerMin": 0.76,
-      "avgOpponentRank": "Silver I",
+      "avgOpponentRank": null,
       "items": [
         3084,
         2502,
@@ -545,35 +574,6 @@
         1029,
         3009
       ]
-    },
-    {
-      "matchId": "EUW1_7972778278",
-      "champion": "DrMundo",
-      "kills": 2,
-      "deaths": 4,
-      "assists": 4,
-      "kda": 1.5,
-      "csPerMin": 6.04,
-      "win": false,
-      "gameCreation": 1788528634328,
-      "durationMin": 28,
-      "position": "JUNGLE",
-      "damageDealt": 20067,
-      "damagePerMin": 713,
-      "damageTaken": 39746,
-      "goldEarned": 9744,
-      "goldPerMin": 346,
-      "visionScore": 25,
-      "visionScorePerMin": 0.89,
-      "avgOpponentRank": null,
-      "items": [
-        3742,
-        3084,
-        3009,
-        1011,
-        1006,
-        1011
-      ]
     }
   ],
   "topChampions": [
@@ -591,8 +591,8 @@
     },
     {
       "champion": "Sejuani",
-      "games": 3,
-      "wins": 3,
+      "games": 4,
+      "wins": 4,
       "winrate": 100.0
     },
     {
@@ -602,17 +602,9 @@
       "winrate": 50.0
     }
   ],
-  "avgKda": 5.01,
+  "avgKda": 5.32,
   "avgCsPerMin": 6.19,
   "lpHistory": [
-    {
-      "totalGames": 102,
-      "leaguePoints": 20,
-      "tier": "SILVER",
-      "rank": "I",
-      "rankScore": 1120,
-      "timestamp": "2026-09-04T14:01:03Z"
-    },
     {
       "totalGames": 103,
       "leaguePoints": 38,
@@ -764,9 +756,17 @@
       "rank": "IV",
       "rankScore": 1276,
       "timestamp": "2026-09-11T17:31:00Z"
+    },
+    {
+      "totalGames": 122,
+      "leaguePoints": 95,
+      "tier": "GOLD",
+      "rank": "IV",
+      "rankScore": 1295,
+      "timestamp": "2026-09-11T18:15:46Z"
     }
   ],
-  "lpChartPoints": "0.0,32.0 39.4,28.3 78.7,24.6 118.1,20.7 157.5,16.8 196.8,21.1 236.2,17.2 275.6,21.5 314.9,17.6 354.3,21.9 393.7,18.1 433.1,13.9 472.4,9.8 511.8,13.9 551.2,15.6 590.5,15.6 629.9,11.7 669.3,7.8 708.6,3.9 748.0,0.0",
+  "lpChartPoints": "0.0,32.0 39.4,28.3 78.7,24.5 118.1,20.6 157.5,24.9 196.8,21.0 236.2,25.3 275.6,21.4 314.9,25.7 354.3,21.8 393.7,17.7 433.1,13.7 472.4,17.7 511.8,19.4 551.2,19.4 590.5,15.5 629.9,11.6 669.3,7.7 708.6,3.9 748.0,0.0",
   "lpChartMin": "Silver I",
   "lpChartMax": "Gold IV"
 }
