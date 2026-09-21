@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-21T16:45:41Z",
+  "updatedAt": "2026-09-21T17:01:15Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.18.1",
   "soloDuo": {
     "tier": "GOLD",
     "rank": "IV",
-    "leaguePoints": 85,
+    "leaguePoints": 80,
     "wins": 62,
     "losses": 76,
     "winrate": 44.9
