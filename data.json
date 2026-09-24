@@ -1,17 +1,44 @@
 {
-  "updatedAt": "2026-09-24T17:15:45Z",
+  "updatedAt": "2026-09-24T17:31:04Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.19.1",
   "soloDuo": {
     "tier": "GOLD",
     "rank": "IV",
-    "leaguePoints": 22,
+    "leaguePoints": 2,
     "wins": 64,
-    "losses": 81,
-    "winrate": 44.1
+    "losses": 82,
+    "winrate": 43.8
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7993697707",
+      "champion": "Volibear",
+      "kills": 3,
+      "deaths": 11,
+      "assists": 5,
+      "kda": 0.73,
+      "csPerMin": 5.05,
+      "win": false,
+      "gameCreation": 1790268689138,
+      "durationMin": 26,
+      "position": "JUNGLE",
+      "damageDealt": 8013,
+      "damagePerMin": 311,
+      "damageTaken": 31540,
+      "goldEarned": 8617,
+      "goldPerMin": 335,
+      "visionScore": 24,
+      "visionScorePerMin": 0.93,
+      "avgOpponentRank": "Gold IV",
+      "items": [
+        3087,
+        2510,
+        1028,
+        3047
+      ]
+    },
     {
       "matchId": "EUW1_7993605616",
       "champion": "Volibear",
@@ -88,7 +115,7 @@
       "goldPerMin": 421,
       "visionScore": 15,
       "visionScorePerMin": 0.62,
-      "avgOpponentRank": "Silver I",
+      "avgOpponentRank": null,
       "items": [
         3084,
         3047,
@@ -547,33 +574,6 @@
         1031,
         2502
       ]
-    },
-    {
-      "matchId": "EUW1_7981294037",
-      "champion": "Chogath",
-      "kills": 2,
-      "deaths": 2,
-      "assists": 1,
-      "kda": 1.5,
-      "csPerMin": 6.06,
-      "win": false,
-      "gameCreation": 1789216869821,
-      "durationMin": 16,
-      "position": "JUNGLE",
-      "damageDealt": 4008,
-      "damagePerMin": 258,
-      "damageTaken": 14052,
-      "goldEarned": 5790,
-      "goldPerMin": 373,
-      "visionScore": 16,
-      "visionScorePerMin": 1.03,
-      "avgOpponentRank": null,
-      "items": [
-        1102,
-        3084,
-        3047,
-        1028
-      ]
     }
   ],
   "topChampions": [
@@ -584,16 +584,16 @@
       "winrate": 57.1
     },
     {
+      "champion": "Volibear",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0
+    },
+    {
       "champion": "Sejuani",
       "games": 2,
       "wins": 1,
       "winrate": 50.0
-    },
-    {
-      "champion": "Volibear",
-      "games": 1,
-      "wins": 0,
-      "winrate": 0.0
     },
     {
       "champion": "Belveth",
@@ -602,17 +602,9 @@
       "winrate": 0.0
     }
   ],
-  "avgKda": 4.28,
-  "avgCsPerMin": 6.72,
+  "avgKda": 4.24,
+  "avgCsPerMin": 6.67,
   "lpHistory": [
-    {
-      "totalGames": 126,
-      "leaguePoints": 52,
-      "tier": "GOLD",
-      "rank": "IV",
-      "rankScore": 1252,
-      "timestamp": "2026-09-12T13:15:38Z"
-    },
     {
       "totalGames": 127,
       "leaguePoints": 31,
@@ -764,9 +756,17 @@
       "rank": "IV",
       "rankScore": 1222,
       "timestamp": "2026-09-24T16:01:15Z"
+    },
+    {
+      "totalGames": 146,
+      "leaguePoints": 2,
+      "tier": "GOLD",
+      "rank": "IV",
+      "rankScore": 1202,
+      "timestamp": "2026-09-24T17:31:04Z"
     }
   ],
-  "lpChartPoints": "0.0,19.0 39.4,24.5 78.7,29.9 118.1,25.0 157.5,20.0 196.8,15.1 236.2,20.6 275.6,15.6 314.9,10.4 354.3,5.2 393.7,0.0 433.1,5.2 472.4,10.4 511.8,16.7 551.2,21.6 590.5,26.8 629.9,32.0 669.3,26.8 708.6,21.6 748.0,26.8",
+  "lpChartPoints": "0.0,24.5 39.4,29.9 78.7,25.0 118.1,20.0 157.5,15.1 196.8,20.6 236.2,15.6 275.6,10.4 314.9,5.2 354.3,0.0 393.7,5.2 433.1,10.4 472.4,16.7 511.8,21.6 551.2,26.8 590.5,32.0 629.9,26.8 669.3,21.6 708.6,26.8 748.0,32.0",
   "lpChartMin": "Gold IV",
   "lpChartMax": "Gold III"
 }
