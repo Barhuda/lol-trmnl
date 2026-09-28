@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T16:55:42Z",
+  "updatedAt": "2026-09-28T22:26:56Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.19.1",
@@ -58,7 +58,7 @@
       "goldPerMin": 450,
       "visionScore": 21,
       "visionScorePerMin": 0.71,
-      "avgOpponentRank": "Gold III",
+      "avgOpponentRank": "Gold II",
       "items": [
         3087,
         2510,
@@ -86,7 +86,7 @@
       "goldPerMin": 315,
       "visionScore": 11,
       "visionScorePerMin": 0.72,
-      "avgOpponentRank": "Gold III",
+      "avgOpponentRank": "Gold II",
       "items": [
         2508,
         3147,
