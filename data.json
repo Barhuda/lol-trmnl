@@ -1,17 +1,46 @@
 {
-  "updatedAt": "2026-09-29T15:27:09Z",
+  "updatedAt": "2026-09-29T20:10:46Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.19.1",
   "soloDuo": {
     "tier": "GOLD",
     "rank": "IV",
-    "leaguePoints": 68,
-    "wins": 73,
+    "leaguePoints": 89,
+    "wins": 74,
     "losses": 88,
-    "winrate": 45.3
+    "winrate": 45.7
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_7998700293",
+      "champion": "MonkeyKing",
+      "kills": 3,
+      "deaths": 9,
+      "assists": 12,
+      "kda": 1.67,
+      "csPerMin": 5.35,
+      "win": true,
+      "gameCreation": 1790697078693,
+      "durationMin": 37,
+      "position": "JUNGLE",
+      "damageDealt": 17460,
+      "damagePerMin": 471,
+      "damageTaken": 36941,
+      "goldEarned": 12605,
+      "goldPerMin": 340,
+      "visionScore": 37,
+      "visionScorePerMin": 1.0,
+      "avgOpponentRank": "Gold IV",
+      "items": [
+        3078,
+        3047,
+        6333,
+        1057,
+        1006,
+        3071
+      ]
+    },
     {
       "matchId": "EUW1_7996625417",
       "champion": "Lillia",
@@ -86,7 +115,7 @@
       "goldPerMin": 315,
       "visionScore": 11,
       "visionScorePerMin": 0.72,
-      "avgOpponentRank": "Gold II",
+      "avgOpponentRank": null,
       "items": [
         2508,
         3147,
@@ -542,35 +571,6 @@
         1031,
         1028
       ]
-    },
-    {
-      "matchId": "EUW1_7991847109",
-      "champion": "Belveth",
-      "kills": 4,
-      "deaths": 11,
-      "assists": 10,
-      "kda": 1.27,
-      "csPerMin": 6.97,
-      "win": false,
-      "gameCreation": 1790097928719,
-      "durationMin": 35,
-      "position": "JUNGLE",
-      "damageDealt": 14192,
-      "damagePerMin": 411,
-      "damageTaken": 44304,
-      "goldEarned": 13875,
-      "goldPerMin": 401,
-      "visionScore": 45,
-      "visionScorePerMin": 1.3,
-      "avgOpponentRank": null,
-      "items": [
-        6631,
-        6672,
-        3047,
-        3153,
-        2019,
-        3133
-      ]
     }
   ],
   "topChampions": [
@@ -593,23 +593,15 @@
       "winrate": 50.0
     },
     {
-      "champion": "Shyvana",
+      "champion": "MonkeyKing",
       "games": 1,
       "wins": 1,
       "winrate": 100.0
     }
   ],
-  "avgKda": 4.24,
-  "avgCsPerMin": 6.92,
+  "avgKda": 4.26,
+  "avgCsPerMin": 6.84,
   "lpHistory": [
-    {
-      "totalGames": 142,
-      "leaguePoints": 2,
-      "tier": "GOLD",
-      "rank": "IV",
-      "rankScore": 1202,
-      "timestamp": "2026-09-22T18:15:44Z"
-    },
     {
       "totalGames": 143,
       "leaguePoints": 22,
@@ -761,9 +753,17 @@
       "rank": "IV",
       "rankScore": 1268,
       "timestamp": "2026-09-27T17:10:40Z"
+    },
+    {
+      "totalGames": 162,
+      "leaguePoints": 89,
+      "tier": "GOLD",
+      "rank": "IV",
+      "rankScore": 1289,
+      "timestamp": "2026-09-29T20:10:46Z"
     }
   ],
-  "lpChartPoints": "0.0,19.9 39.4,15.2 78.7,10.5 118.1,15.2 157.5,19.9 196.8,20.3 236.2,20.3 275.6,32.0 314.9,27.8 354.3,23.4 393.7,18.9 433.1,14.2 472.4,9.6 511.8,14.2 551.2,9.6 590.5,4.9 629.9,0.0 669.3,4.4 708.6,9.1 748.0,4.4",
+  "lpChartPoints": "0.0,15.4 39.4,10.8 78.7,15.4 118.1,20.0 157.5,20.5 196.8,20.5 236.2,32.0 275.6,27.9 314.9,23.5 354.3,19.1 393.7,14.5 433.1,9.9 472.4,14.5 511.8,9.9 551.2,5.3 590.5,0.5 629.9,4.8 669.3,9.4 708.6,4.8 748.0,0.0",
   "lpChartMin": "Silver I",
   "lpChartMax": "Gold IV"
 }
