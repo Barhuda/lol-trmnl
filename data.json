@@ -1,17 +1,72 @@
 {
-  "updatedAt": "2026-10-23T21:07:46Z",
+  "updatedAt": "2026-10-23T23:55:20Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.21.1",
   "soloDuo": {
     "tier": "GOLD",
     "rank": "II",
-    "leaguePoints": 82,
+    "leaguePoints": 40,
     "wins": 102,
-    "losses": 111,
-    "winrate": 47.9
+    "losses": 113,
+    "winrate": 47.4
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_8023093151",
+      "champion": "Vi",
+      "kills": 3,
+      "deaths": 6,
+      "assists": 1,
+      "kda": 0.67,
+      "csPerMin": 6.31,
+      "win": false,
+      "gameCreation": 1792792455666,
+      "durationMin": 20,
+      "position": "JUNGLE",
+      "damageDealt": 7671,
+      "damagePerMin": 381,
+      "damageTaken": 17962,
+      "goldEarned": 7509,
+      "goldPerMin": 373,
+      "visionScore": 14,
+      "visionScorePerMin": 0.7,
+      "avgOpponentRank": "Gold II",
+      "items": [
+        3044,
+        3078,
+        3047,
+        3067
+      ]
+    },
+    {
+      "matchId": "EUW1_8023047870",
+      "champion": "Lillia",
+      "kills": 5,
+      "deaths": 5,
+      "assists": 5,
+      "kda": 2.0,
+      "csPerMin": 6.45,
+      "win": false,
+      "gameCreation": 1792790267398,
+      "durationMin": 32,
+      "position": "JUNGLE",
+      "damageDealt": 19311,
+      "damagePerMin": 605,
+      "damageTaken": 36224,
+      "goldEarned": 12087,
+      "goldPerMin": 379,
+      "visionScore": 30,
+      "visionScorePerMin": 0.94,
+      "avgOpponentRank": "Gold II",
+      "items": [
+        3157,
+        6653,
+        3158,
+        4633,
+        1058
+      ]
+    },
     {
       "matchId": "EUW1_8022698142",
       "champion": "Maokai",
@@ -59,7 +114,7 @@
       "goldPerMin": 418,
       "visionScore": 29,
       "visionScorePerMin": 1.22,
-      "avgOpponentRank": "Gold II",
+      "avgOpponentRank": null,
       "items": [
         3111,
         3078,
@@ -88,7 +143,7 @@
       "goldPerMin": 407,
       "visionScore": 12,
       "visionScorePerMin": 0.54,
-      "avgOpponentRank": "Silver II",
+      "avgOpponentRank": null,
       "items": [
         4645,
         3100,
@@ -513,61 +568,6 @@
         3078,
         2422
       ]
-    },
-    {
-      "matchId": "EUW1_8016243874",
-      "champion": "Lillia",
-      "kills": 1,
-      "deaths": 5,
-      "assists": 8,
-      "kda": 1.8,
-      "csPerMin": 6.31,
-      "win": false,
-      "gameCreation": 1792247747754,
-      "durationMin": 24,
-      "position": "JUNGLE",
-      "damageDealt": 10874,
-      "damagePerMin": 454,
-      "damageTaken": 26939,
-      "goldEarned": 8125,
-      "goldPerMin": 339,
-      "visionScore": 15,
-      "visionScorePerMin": 0.63,
-      "avgOpponentRank": null,
-      "items": [
-        4633,
-        6653,
-        3111
-      ]
-    },
-    {
-      "matchId": "EUW1_8016203969",
-      "champion": "Chogath",
-      "kills": 5,
-      "deaths": 6,
-      "assists": 11,
-      "kda": 2.67,
-      "csPerMin": 6.13,
-      "win": false,
-      "gameCreation": 1792245625652,
-      "durationMin": 30,
-      "position": "JUNGLE",
-      "damageDealt": 17931,
-      "damagePerMin": 590,
-      "damageTaken": 50664,
-      "goldEarned": 11895,
-      "goldPerMin": 392,
-      "visionScore": 22,
-      "visionScorePerMin": 0.72,
-      "avgOpponentRank": null,
-      "items": [
-        3742,
-        3084,
-        3075,
-        1057,
-        1028,
-        3009
-      ]
     }
   ],
   "topChampions": [
@@ -578,16 +578,16 @@
       "winrate": 33.3
     },
     {
+      "champion": "Vi",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0
+    },
+    {
       "champion": "Gragas",
       "games": 3,
       "wins": 1,
       "winrate": 33.3
-    },
-    {
-      "champion": "Vi",
-      "games": 3,
-      "wins": 2,
-      "winrate": 66.7
     },
     {
       "champion": "MonkeyKing",
@@ -596,17 +596,9 @@
       "winrate": 0.0
     }
   ],
-  "avgKda": 2.36,
-  "avgCsPerMin": 5.95,
+  "avgKda": 2.27,
+  "avgCsPerMin": 5.96,
   "lpHistory": [
-    {
-      "totalGames": 168,
-      "leaguePoints": 92,
-      "tier": "GOLD",
-      "rank": "III",
-      "rankScore": 1392,
-      "timestamp": "2026-10-01T19:43:24Z"
-    },
     {
       "totalGames": 171,
       "leaguePoints": 73,
@@ -758,9 +750,17 @@
       "rank": "II",
       "rankScore": 1482,
       "timestamp": "2026-10-23T17:45:29Z"
+    },
+    {
+      "totalGames": 215,
+      "leaguePoints": 40,
+      "tier": "GOLD",
+      "rank": "II",
+      "rankScore": 1440,
+      "timestamp": "2026-10-23T23:55:20Z"
     }
   ],
-  "lpChartPoints": "0.0,27.7 39.4,32.0 78.7,32.0 118.1,22.5 157.5,26.4 196.8,25.5 236.2,25.0 275.6,20.3 314.9,15.5 354.3,5.9 393.7,9.7 433.1,0.0 472.4,3.2 511.8,11.7 551.2,16.2 590.5,11.7 629.9,7.2 669.3,7.0 708.6,2.3 748.0,7.4",
+  "lpChartPoints": "0.0,32.0 39.4,32.0 78.7,22.5 118.1,26.4 157.5,25.5 196.8,25.0 236.2,20.3 275.6,15.5 314.9,5.9 354.3,9.7 393.7,0.0 433.1,3.2 472.4,11.7 511.8,16.2 551.2,11.7 590.5,7.2 629.9,7.0 669.3,2.3 708.6,7.4 748.0,16.9",
   "lpChartMin": "Gold III",
   "lpChartMax": "Gold I"
 }
