@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T17:48:03Z",
+  "updatedAt": "2026-10-25T20:31:11Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.21.1",
@@ -12,6 +12,31 @@
     "winrate": 47.7
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_8025418194",
+      "champion": "Lillia",
+      "kills": 0,
+      "deaths": 0,
+      "assists": 0,
+      "kda": 0.0,
+      "csPerMin": 0.0,
+      "win": false,
+      "gameCreation": 1792959747227,
+      "durationMin": 1,
+      "position": "JUNGLE",
+      "damageDealt": 0,
+      "damagePerMin": 0,
+      "damageTaken": 230,
+      "goldEarned": 515,
+      "goldPerMin": 429,
+      "visionScore": 0,
+      "visionScorePerMin": 0.0,
+      "avgOpponentRank": "Gold II",
+      "items": [
+        1102,
+        2003
+      ]
+    },
     {
       "matchId": "EUW1_8025054083",
       "champion": "Lillia",
@@ -87,7 +112,7 @@
       "goldPerMin": 358,
       "visionScore": 46,
       "visionScorePerMin": 1.01,
-      "avgOpponentRank": "Gold I",
+      "avgOpponentRank": null,
       "items": [
         3078,
         3111,
@@ -543,34 +568,6 @@
         4633,
         6653
       ]
-    },
-    {
-      "matchId": "EUW1_8018641698",
-      "champion": "Volibear",
-      "kills": 3,
-      "deaths": 5,
-      "assists": 5,
-      "kda": 1.6,
-      "csPerMin": 6.15,
-      "win": true,
-      "gameCreation": 1792431728631,
-      "durationMin": 28,
-      "position": "JUNGLE",
-      "damageDealt": 11221,
-      "damagePerMin": 395,
-      "damageTaken": 30123,
-      "goldEarned": 10568,
-      "goldPerMin": 372,
-      "visionScore": 21,
-      "visionScorePerMin": 0.74,
-      "avgOpponentRank": null,
-      "items": [
-        3111,
-        2510,
-        6675,
-        3065,
-        1029
-      ]
     }
   ],
   "topChampions": [
@@ -582,9 +579,9 @@
     },
     {
       "champion": "Lillia",
-      "games": 5,
+      "games": 6,
       "wins": 3,
-      "winrate": 60.0
+      "winrate": 50.0
     },
     {
       "champion": "Gragas",
@@ -599,8 +596,8 @@
       "winrate": 100.0
     }
   ],
-  "avgKda": 4.22,
-  "avgCsPerMin": 6.17,
+  "avgKda": 4.14,
+  "avgCsPerMin": 5.86,
   "lpHistory": [
     {
       "totalGames": 184,
