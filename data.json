@@ -1,17 +1,44 @@
 {
-  "updatedAt": "2026-10-31T15:28:06Z",
+  "updatedAt": "2026-10-31T19:29:44Z",
   "riotId": "BarHuda#EUW",
   "region": "EUW",
   "ddragonVersion": "16.21.1",
   "soloDuo": {
     "tier": "GOLD",
     "rank": "I",
-    "leaguePoints": 54,
+    "leaguePoints": 35,
     "wins": 113,
-    "losses": 118,
-    "winrate": 48.9
+    "losses": 119,
+    "winrate": 48.7
   },
   "recentMatches": [
+    {
+      "matchId": "EUW1_8031476785",
+      "champion": "JarvanIV",
+      "kills": 0,
+      "deaths": 8,
+      "assists": 11,
+      "kda": 1.38,
+      "csPerMin": 5.58,
+      "win": false,
+      "gameCreation": 1793460192811,
+      "durationMin": 28,
+      "position": "JUNGLE",
+      "damageDealt": 11089,
+      "damagePerMin": 389,
+      "damageTaken": 27480,
+      "goldEarned": 8981,
+      "goldPerMin": 315,
+      "visionScore": 25,
+      "visionScorePerMin": 0.88,
+      "avgOpponentRank": "Gold I",
+      "items": [
+        6610,
+        3047,
+        3071,
+        2019
+      ]
+    },
     {
       "matchId": "EUW1_8031436715",
       "champion": "JarvanIV",
@@ -59,7 +86,7 @@
       "goldPerMin": 408,
       "visionScore": 32,
       "visionScorePerMin": 0.9,
-      "avgOpponentRank": "Gold II",
+      "avgOpponentRank": "Gold I",
       "items": [
         3078,
         3111,
@@ -88,7 +115,7 @@
       "goldPerMin": 473,
       "visionScore": 25,
       "visionScorePerMin": 1.05,
-      "avgOpponentRank": "Gold III",
+      "avgOpponentRank": null,
       "items": [
         6333,
         3078,
@@ -547,34 +574,6 @@
         4633,
         1058
       ]
-    },
-    {
-      "matchId": "EUW1_8022698142",
-      "champion": "Maokai",
-      "kills": 1,
-      "deaths": 8,
-      "assists": 7,
-      "kda": 1.0,
-      "csPerMin": 4.66,
-      "win": true,
-      "gameCreation": 1792775093378,
-      "durationMin": 28,
-      "position": "TOP",
-      "damageDealt": 17389,
-      "damagePerMin": 628,
-      "damageTaken": 39859,
-      "goldEarned": 7995,
-      "goldPerMin": 289,
-      "visionScore": 18,
-      "visionScorePerMin": 0.65,
-      "avgOpponentRank": null,
-      "items": [
-        1054,
-        3121,
-        3111,
-        3065,
-        3067
-      ]
     }
   ],
   "topChampions": [
@@ -591,29 +590,21 @@
       "winrate": 50.0
     },
     {
+      "champion": "JarvanIV",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0
+    },
+    {
       "champion": "MonkeyKing",
       "games": 2,
       "wins": 2,
       "winrate": 100.0
-    },
-    {
-      "champion": "JarvanIV",
-      "games": 1,
-      "wins": 1,
-      "winrate": 100.0
     }
   ],
-  "avgKda": 4.92,
-  "avgCsPerMin": 6.33,
+  "avgKda": 4.94,
+  "avgCsPerMin": 6.38,
   "lpHistory": [
-    {
-      "totalGames": 196,
-      "leaguePoints": 1,
-      "tier": "GOLD",
-      "rank": "I",
-      "rankScore": 1501,
-      "timestamp": "2026-10-17T16:53:47Z"
-    },
     {
       "totalGames": 198,
       "leaguePoints": 63,
@@ -765,9 +756,17 @@
       "rank": "I",
       "rankScore": 1554,
       "timestamp": "2026-10-31T15:28:06Z"
+    },
+    {
+      "totalGames": 232,
+      "leaguePoints": 35,
+      "tier": "GOLD",
+      "rank": "I",
+      "rankScore": 1535,
+      "timestamp": "2026-10-31T19:29:44Z"
     }
   ],
-  "lpChartPoints": "0.0,12.5 39.4,21.4 78.7,26.1 118.1,21.4 157.5,16.7 196.8,16.5 236.2,11.5 275.6,16.9 314.9,26.8 354.3,32.0 393.7,27.8 433.1,18.8 472.4,23.5 511.8,24.0 551.2,19.5 590.5,10.1 629.9,5.2 669.3,9.6 708.6,4.9 748.0,0.0",
+  "lpChartPoints": "0.0,21.4 39.4,26.1 78.7,21.4 118.1,16.7 157.5,16.5 196.8,11.5 236.2,16.9 275.6,26.8 314.9,32.0 354.3,27.8 393.7,18.8 433.1,23.5 472.4,24.0 511.8,19.5 551.2,10.1 590.5,5.2 629.9,9.6 669.3,4.9 708.6,0.0 748.0,4.5",
   "lpChartMin": "Gold II",
   "lpChartMax": "Gold I"
 }
